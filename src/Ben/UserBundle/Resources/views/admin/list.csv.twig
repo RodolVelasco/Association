@@ -1,0 +1,5 @@
+id,username,cin,email,first_name,family_name,birthday,gender,post_code,city,contry,job,tel,gsm,diplome,expertise,created,last_login_date
+{% for entity in entities %}
+{% set p = entity.profile %}
+{{ entity.id }},{{ entity.username }},{{ p.cin }},{{ entity.email }},{{ p.firstName }},{{ p.familyName }},{{ p.birthday|date('d/m/Y') }},{{ p.gender }},{{ p.postCode }},{{ p.city }},{{ p.contry }},{{ p.job }},{{ p.tel }},{{ p.gsm }},{{ p.diplome }},{{ p.expertise }},{{ entity.created|date('d/m/Y') }},{{ entity.lastLogin|date('d/m/Y') }}
+ {% endfor %} 

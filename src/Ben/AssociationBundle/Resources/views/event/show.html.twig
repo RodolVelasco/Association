@@ -1,0 +1,78 @@
+{% extends "BenAssociationBundle::layout.html.twig" %}
+{% block title %}
+{{ 'event.meta.name'|trans }} | {{ parent() }}
+{% endblock %}
+{% block body %}
+<h2><span class="fui-time"></span>  {{ 'event.meta.name'|trans }}</h2>
+
+<div class="row">
+    <div class="col-xs-9">
+    <table class="table table-bordered table-striped">
+        <tbody>
+            <tr>
+                <th>{{ 'ben.meta.id'|trans }}</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>{{ 'event.meta.name'|trans }}</th>
+                <td>{{ entity.name }}</td>
+            </tr>
+            <tr>
+                <th>{{ 'cotisation.form.date.from'|trans }}</th>
+                <td>{{ entity.datefrom|date('d/m/Y à H:i') }}</td>
+            </tr>
+            <tr>
+                <th>{{ 'cotisation.form.date.to'|trans }}</th>
+                <td>{{ entity.dateto|date('d/m/Y à H:i') }}</td>
+            </tr>
+            <tr>
+                <th>{{ 'event.form.description'|trans }}</th>
+                <td>{{ entity.description }}</td>
+            </tr>
+            <tr>
+                <th>{{ 'event.form.type'|trans }}</th>
+                <td>{{ entity.type }}</td>
+            </tr>
+            <tr>
+                <th>{{ 'event.form.groups'|trans }}</th>
+                <td>
+                    <ul class="list-unstyled">{% for group in entity.groups %}<li>{{ group}}</li>{% endfor %}</ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div> 
+{% if is_granted("ROLE_MANAGER") %}
+    <div class="col-xs-3">
+        <form id="deleteForm" action="{{ path('event_delete', { 'id': entity.id }) }}" method="post">
+        {{ form_widget(delete_form) }}
+        <a class="btn btn-embossed btn-primary btn-block" href="{{ path('event_edit', { 'id': entity.id }) }}">
+            <span class="fui-new"></span> {{ 'ben.action.edit'|trans }}
+        </a>
+        <a class="btn btn-embossed btn-inverse btn-block" href="{{ path('event_demo', { 'id': entity.id }) }}">
+            <span class="fui-eye"></span> {{ 'event.action.letter.show'|trans }} 
+        </a>
+        <a class="btn btn-embossed btn-inverse btn-block" href="{{ path('event_print', { 'id': entity.id }) }}">
+            <span class="glyphicon glyphicon-print"></span> {{ 'event.action.letter.print'|trans }} 
+        </a>
+        <a class="btn btn-embossed btn-inverse btn-block" href="{{ path('event_send', { 'id': entity.id }) }}"><span class="glyphicon glyphicon-envelope"></span> {{ 'event.action.letter.send'|trans }} </a>
+        <a class="btn btn-embossed btn-inverse btn-block" href="{{ path('event') }}"><span class="fui-arrow-left"></span> {{ 'ben.action.backtolist'|trans }}</a>
+        {% if is_granted("ROLE_ADMIN") %}
+        <button type="submit" class="btn btn-embossed btn-danger btn-block"><span class="fui-cross"></span> {{ 'ben.action.delete'|trans }} </button>
+        {% endif %}
+    </form>
+    </div>
+{% endif %}
+<div class="clearfix"></div>
+</div>
+{% endblock body %}
+
+ {% block javascripts %}
+{{ parent() }}
+<script> 
+    (function($) {
+        $('#deleteForm').on('submit', confirmation);
+    })(jQuery);
+</script>
+{% endblock %}
+

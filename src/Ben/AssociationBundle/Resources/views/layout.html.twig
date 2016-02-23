@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--
+         ===================================================================
+        ||          designed & developed by benaich.med@gmail.com          ||
+         ===================================================================
+-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="application-name" content="Tacharock"/>
+    <meta name="author" content="benaich.med@gmail.com">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    {% block meta %}{% endblock %}
+    {% block stylesheet %}
+    {% if app.request.locale == 'ar' %}
+        <link href="{{ asset('bootstrap/css/bootstrap-arabic.css') }}" rel="stylesheet"><!-- Loading arabic Bootstrap -->
+    {% else %}
+        <link href="{{ asset('bootstrap/css/bootstrap.css') }}" rel="stylesheet"><!-- Loading Bootstrap -->
+    {% endif %}
+        <link href="{{ asset('css/flat-ui.css') }}" rel="stylesheet"><!-- Loading Flat UI -->
+        <link href="{{ asset('css/main.css') }}" rel="stylesheet"><!-- Loading my css -->
+        <link href="{{ asset('css/spinner.css') }}" rel="stylesheet">
+    {% if app.request.locale == 'ar' %}
+        <link href="{{ asset('css/main-arabic.css') }}" rel="stylesheet"><!-- Loading my css -->
+    {% endif %}
+    {% endblock %}
+    <title>{% block title %}{{ app_config.org_name }}{% endblock %}</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+{% block container %}
+<body class="{{ app_config.app_theme }} {% if not is_granted("ROLE_MANAGER") %}front-end{% endif %}">
+{% block header %}
+<header class="visible-print print-header hide">
+  <div class="pull-right"><img src="{{ asset(app_config.org_logo) }}" alt="logo"/></div>
+  <h1>{{ app_config.org_name }}</h1> 
+  <div class="clearfix"></div>
+</header>
+    <header id="adminbar" class="header hidden-print navbar">
+        <a href="#" id="logo"><img src="{{ asset(app_config.org_logo) }}" alt="logo" class="img-small"> <span>{{ app_config.org_name }}</span></a>
+
+        <div class="dropdown pull-right user-profile">
+          <a href="#" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown">
+          <img class="img-small" src="{{ asset( app.user.avatar)}}" alt="{{ app.user.username }}">
+          <span class="fullname">{{ app.user.profile.fullName }}</span> <span class="glyphicon glyphicon-chevron-down"></span></a>
+            <ul class="dropdown-menu">
+                <li>
+                    <div class="navbar-content">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <img src="{{ asset( app.user.avatar)}}" alt="Alternate Text" class="img-responsive" />
+                                <div class="clearfix"></div>
+                                <p></p>
+                            </div>
+                            <div class="col-xs-7">
+                                <span>{{ app.user.username }}</span>
+                                <p class="text-muted small">{{ app.user.email }}</p>
+                                <div class="divider"></div>
+                                <a href="{{ path('ben_profile_edit', { 'name': app.user.username}) }}" class="btn btn-primary btn-sm">{{ 'user.action.show'|trans }}</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar-footer">
+                        <div class="navbar-footer-content">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <a href="{{ path('fos_user_profile_edit') }}" class="btn btn-default btn-sm">{{ 'user.action.setting'|trans }}</a>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a href="{{ path('fos_user_security_logout') }}" class="btn btn-default btn-sm pull-right">{{ 'user.action.logout'|trans }}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <ul class="user-menu visible-desktop pull-right">
+            <li>
+                <div class="dropdown pull-right user-profile">
+                    <a href="#" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="glyphicon glyphicon-envelope"></span>
+                        {% if fos_message_nb_unread() != 0 %}
+                            <span class="badge badge-important">{{ fos_message_nb_unread() }}</span>
+                        {% endif %}
+                    </a>
+                     {% render url('fos_message_unread') %}
+                </div>
+            </li>
+            <li><a href="#" title="{{ 'ben.menu.notifications'|trans }}" data-toggle="tooltip"  data-placement="bottom"><span class="glyphicon glyphicon-bell"></span></a></li>
+            <li><a href="{{ path('event_calendar') }}" title="{{ 'ben.menu.calendar'|trans }}" data-toggle="tooltip" data-placement="bottom"><span class="glyphicon glyphicon-calendar"></span></a></li>
+            <li><a href="{{ path('ben_stats') }}" title="Statistiques" data-toggle="tooltip" data-placement="bottom"><span class="glyphicon glyphicon-stats"></span></a></li>
+        </ul>
+    </header>
+
+    {% include "BenAssociationBundle:Default:menu.html.twig" %}
+{% endblock header %}
+    <section class="wrap">
+        <div class="container">    
+
+        {% include "BenAssociationBundle:Default:flashes.html.twig" %}
+        {% block breadcrumb %} {# 
+            <ul class="breadcrumb">
+                <li><a href="#fakelink">Home</a></li>
+                <li><a href="#fakelink">Directory</a></li>
+                <li class="active"><a href="#">Current Article</a></li>
+            </ul> #}
+        {% endblock %}
+
+        {% block body %}{% endblock %}
+        </div>
+    </section>  
+
+    {% block javascripts %}
+    <script src="{{ asset('js/jquery-1.8.3.min.js') }}"></script>
+    <script src="{{ asset('js/jquery-ui-1.10.3.custom.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap-select.js') }}"></script>
+    <script src="{{ asset('js/bootstrap-switch.js') }}"></script>
+    <script src="{{ asset('js/flatui-checkbox.js') }}"></script>
+    <script src="{{ asset('js/flatui-radio.js') }}"></script>
+    <script src="{{ asset('js/jquery.cookie.js') }}"></script>
+    <script src="{{ asset('js/application.js') }}"></script>
+    <script type="text/javascript">
+    (function($) {
+
+    })(jQuery);
+    </script>
+    {% endblock %}
+</body>
+{% endblock container %} 
+</html>

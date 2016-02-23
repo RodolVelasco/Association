@@ -1,0 +1,372 @@
+{% extends "BenAssociationBundle::layout.html.twig" %}
+{% block title %}
+{{'user.title.main'|trans}} | {{ parent() }}
+{% endblock %}
+{% block body %}
+<a class="btn btn-inverse pull-right btn-sm" href="{{ path('ben_archive')}}"> {{'user.title.archive'|trans}} <span class="fui-arrow-right"></span></a>
+<h2><span class="fui-user"></span> {{'user.title.main'|trans}}</h2>
+        <form  id="jsForm" role="form" method="post" action="">
+          <input id="pagenumber" type="hidden" name="searchParam[page]" value="1"> 
+          <input type="hidden" name="searchParam[archive]" value="0"> 
+          <input id="sortBy" type="hidden" name="searchParam[sortBy]"> 
+          <input id="sortDir" type="hidden" name="searchParam[sortDir]"> 
+            <div class="row hidden-print">
+              <div class="col-md-5 col-xs-6">
+                  <div class="form-group">
+                     <div class="input-group">                                     
+                        <input type="text" name="searchParam[keyword]" class="form-control" placeholder="{{ 'ben.action.search'|trans }}">
+                       <span class="input-group-btn">
+                             <button type="submit" class="btn"><span class="fui-search"></span></button>
+                         </span>
+                     </div>
+                  </div>
+              </div>
+              <div class="col-md-7 col-xs-6">
+                <div class="btn-group pull-right">              
+                  <button class="btn btn-primary" data-toggle="modal" data-target="#searchModal"><span class="fui-search"></span> {{'ben.action.advanced'|trans}}</button>
+                  <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                  </button>
+                  <span class="dropdown-arrow dropdown-arrow-inverse"></span>
+                  <ul class="dropdown-menu dropdown-inverse">
+                    <li><a href="{{ path('ben_new_user') }}"><span class="fui-plus"></span> {{'user.action.new'|trans}}</a></li>
+                    {% if is_granted("ROLE_ADMIN") %}
+                    <li><a href="#" class="js-enable" data-action="1"><span class="fui-check"></span> {{'ben.action.enable'|trans}}</a></li>
+                    <li><a href="#" class="js-enable" data-action="0"><span class="glyphicon glyphicon-ban-circle"></span> {{'ben.action.disable'|trans}}</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="js-promote" data-action="admin"><span class="fui-user text-warning"></span> {{'user.action.promote.admin'|trans}}</a></li>
+                    <li><a href="#" class="js-promote" data-action="manager"><span class="fui-user text-success"></span> {{'user.action.promote.manager'|trans}}</a></li>
+                    <li><a href="#" class="js-promote" data-action="user"><span class="fui-user"></span> {{'user.action.promote.user'|trans}}</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#groupModal"><span class="glyphicon glyphicon-pushpin"></span> {{'user.action.group'|trans}}</a></li>
+                    {% endif %}
+                    <li class="divider"></li>
+                    <li><a href="#" id="js-badge"><span class="fui-credit-card"></span> {{'user.action.carte.show'|trans}}</a></li>
+                    <li><a href="#" id="js-tiquet"><span class="fui-tag"></span> {{'user.action.tiquet'|trans}}</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#" id="js-mail"><span class="glyphicon glyphicon-envelope"></span> {{'message.action.mail'|trans}}</a></li>
+                    <li><a href="#" id="js-sms"><span class="glyphicon glyphicon-comment"></span> {{'ben.action.sms'|trans}}</a></li>
+                    <li><a href="{{ path('ben_users_export') }}"><span class="glyphicon glyphicon-export"></span> {{'ben.action.tocsv'|trans}}</a></li>
+                    <li><a href="{{ path('ben_export_xml') }}"><span class="glyphicon glyphicon-export"></span> {{'ben.action.toxml'|trans}}</a></li>
+                    <li><a href="{{ path('ben_export_excel') }}"><span class="glyphicon glyphicon-export"></span> {{'ben.action.toexcel'|trans}}</a></li>
+                    <li><a href="{{ path('ben_import_csv') }}"><span class="glyphicon glyphicon-import"></span> {{'ben.action.import'|trans}}</a></li>
+                    {% if is_granted("ROLE_ADMIN") %}
+                    <li class="divider"></li>
+                    <li><a href="#" data-toggle="modal" data-target="#confirmationModal"><span class="glyphicon glyphicon-trash"></span> {{'ben.action.delete'|trans}}</a></li>
+                    {% endif %}
+                  </ul>
+                </div>
+              </div><!-- /.col-lg-2 -->
+            </div><!-- /.row -->
+            <div class="table-responsive">
+            <table class="table table-hover table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th><label class="checkbox no-label toggle-all" for="checkbox-table-1"><span class="icons"><span class="first-icon fui-checkbox-unchecked"></span><span class="second-icon fui-checkbox-checked"></span></span><span class="icons"><span class="first-icon fui-checkbox-unchecked"></span><span class="second-icon fui-checkbox-checked"></span></span><input type="checkbox" value="" id="checkbox-table-1" data-toggle="checkbox"></label></th>
+                        {% for item in app_config.userTable %}
+                          {% if item.visible %}
+                          {% if item.fieldName in ['firstname','birthday','familyname'] %}
+                          <th class="sortable"><a href="#" class="js-sort" data-order="{{ item.fieldname }}">{{ item.nicename }}<span class="glyphicon glyphicon-sort pull-right"></span></a></th>
+                          {% else %}
+                          <th>{{ item.nicename }}</th>
+                          {% endif %}
+                          {% endif %}
+                        {% endfor %}
+                        <th>{{'ben.meta.actions'|trans}}</th>
+                    </tr>
+                </thead>
+                <tbody id="dataContainer"></tbody>
+            </table>
+            </div>
+
+            <div class="caption">
+              <em><strong>{{ 'ben.meta.total'|trans }}:</strong> {{ 'user.meta.count'|transchoice(entitiesLength) }}</em>
+            </div>
+
+            {% include "BenUserBundle:admin:search.html.twig" %}
+        </form>
+    
+{% endblock body %}
+
+ {% block javascripts %}
+{{ parent() }}
+<script> 
+    (function($) {
+
+      /* helper functions */
+      function updateLink (id) {
+        var url = '{{ path('ben_show_user', {'id': 1111 }) }}';
+        moreBtn.attr('href', url.replace("1111", id));
+      }
+      function getCheckedRows () {
+        var users = [];
+        dataContainer.find('input:checkbox:checked').each(function() {
+          users.push($(this).val());
+        });
+        return users.join(',');
+      }
+      function isSelected () {
+        if (!getCheckedRows()) {
+          alert('vous devez selectionner au moin un adhérant');
+          return false;
+        };
+        return true;
+      }
+      function init(){
+        pageInput.val('1');
+        checkboxBtn.prop("checked",false);
+        jsFormUrl = '{{ path('ben_users_ajax') }}';
+        profiles = form.find('div.myprofile > div');
+      }
+      function ajaxPost(action, callback) {
+        form.addClass('working');
+        searchModal.modal('hide');
+        $.ajax({ 
+          type: "POST", 
+          data: form.serialize(),
+          url: jsFormUrl, 
+          success: function(data){ 
+            form.removeClass('working');
+            if(callback) callback(data);
+            if(!action){
+              dataContainer.empty().hide().html(data).fadeIn();
+              init();
+            }
+            else{
+              init();
+              ajaxPost();
+            }
+          },
+          error:function(){
+              form.removeClass('working');
+          }
+        });
+        return false;
+      }
+
+      /* ajax dashboard*/
+      var form = $('#jsForm'),
+          enableBtn = form.find('.js-enable'),
+          dataContainer = form.find('#dataContainer');
+          promoteBtn = form.find('.js-promote'),
+          deleteBtn = form.find('#js-delete'),
+          groupInput = form.find('#js-group'),
+          groupSetBtnt = form.find('#js-group-set'),
+          pageInput = form.find('#pagenumber'),
+          perPageBtn = form.find('#js-perpage'),
+          printBadgeBtn = form.find('#js-badge'),
+          printTiquetBtn = form.find('#js-tiquet'),
+          sortByInput = form.find('#sortBy'),
+          sortDirInput = form.find('#sortDir'),
+          sortBtn = form.find('.js-sort'),
+          searchBtn = form.find('#js-search'),
+          filterGroupBtn = form.find('#js-filter-group'),
+          searchModal = form.find('#searchModal'),
+          groupModal = form.find('#groupModal'),
+          confirmationModal = form.find('#confirmationModal'),
+          callModal = form.find('#callModal'),
+          mailModal = form.find('#mailModal'),
+          mailBtn = form.find('#js-mail'),
+          smsBtn = form.find('#js-sms'),
+          modal = form.find('#myModal'),
+          navBtn = modal.find('button'),
+          moreBtn = modal.find('#more'),
+          profiles = [],
+          dir = 'next',
+          link = '',
+          index=0,
+          jsFormUrl = '',
+          checkboxBtn = form.find("input:checkbox");
+
+      form.on('click', '.js-show', function(){
+        var id = $(this).data('id'),
+            index = $(this).data('index')-1,
+            data = profiles[index];
+        modal.find('.modal-body').html(data);
+        modal.modal('show');
+        updateLink(id);
+      });
+
+      navBtn.on('click', function(){
+        var index = modal.find('.userinfo').data('index')-1,
+            dir = $(this).data('dir');
+        index = (dir == 'next') ? index+1 : index-1;
+        modal.find('.modal-body').hide().html(profiles[index]).fadeIn();
+        updateLink(modal.find('.userinfo').data('id'));
+      });
+      /* keyboard navigation */
+      $(document).keydown(function(e){
+        if (e.keyCode == 37) { 
+          navBtn.filter("[data-dir=prev]").trigger('click');
+          return false;
+        }
+        else if(e.keyCode == 39){ 
+          navBtn.filter("[data-dir=next]").trigger('click');
+          return false;
+        }
+      });
+
+
+
+      /* print badge */    
+      printBadgeBtn.on('click', function(){
+          var url = '{{ path('ben_pdf', {'users': 1111 }) }}',
+              users = getCheckedRows();
+          users = (users==='')? 'all':users; 
+          url = url.replace("1111", users);
+          window.location.href = url;
+      });
+      printTiquetBtn.on('click', function(){
+          var url = '{{ path('ben_ticket_user', {'users': 1111 }) }}',
+              users = getCheckedRows();
+          users = (users==='')? 'all':users; 
+          url = url.replace("1111", users);
+          window.location.href = url;
+      });
+
+      /* pagination */    
+      form.on('click', '.js-page', function(){
+          pageInput.val($(this).data('page'));
+          ajaxPost();
+      });
+      /* advanced search */
+      searchBtn.on('click', function () {
+        ajaxPost();
+      });
+
+      /* enable or disable a user*/
+      enableBtn.on('click', function(){
+        var url = '{{ path('ben_enable_users', {'etat': 1111 }) }}',
+            etat = $(this).data('action');
+        if (!isSelected()) return false;
+        jsFormUrl = url.replace("1111", etat);
+        ajaxPost('enable');
+      });
+
+
+      /* change sort order */
+      sortBtn.on('click', function(){
+        var th = $(this).parent();
+        th.addClass('sorted').toggleClass('asc').siblings().removeClass('sorted');
+        sortByInput.val($(this).data('order'));
+        if (th.hasClass('asc')) sortDirInput.val('ASC');
+        else sortDirInput.val('DESC');
+        ajaxPost();
+        return false;
+      });
+
+      /* promote a user */
+      promoteBtn.on('click', function(){
+        var url='{{ path('ben_promote_users', {'role': 1111 }) }}',
+            etat = $(this).data('action');
+        if (!isSelected()) return false;
+        jsFormUrl = url.replace("1111", etat);
+        ajaxPost('promote');
+      });
+
+      /* delete a user */
+      deleteBtn.on('click', function(){
+        // if (!isSelected() || !confirmation('voullez-vous vraiment supprimer les adhérants séléctionnées')) return false;
+        jsFormUrl='{{ path('ben_archive_set', {stat: 1}) }}';
+        ajaxPost('delete');
+        confirmationModal.modal('hide');
+      });
+      form.on('submit', ajaxPost);
+      /* submit the form after loading the page*/
+      init();
+      ajaxPost();
+
+      /* ajouter un groupe de recherche */
+      filterGroupBtn.on('click', function(){
+          jsFormUrl = '{{ path('add_group_filter') }}';
+          ajaxPost('filtergroup', function(data){
+            if(data.name){
+              groupInput.append('<option value="'+data.id+'">'+data.name+'</option>');
+              alert('Le groupe '+data.name+' a été ajouté avec succée');
+            }
+            else alert('This value should not be blank.');
+            console.log(data);
+          });
+
+      });
+
+      /* associer les adhérants sélectionnés à un groupe */
+      groupSetBtnt.on('click', function(){
+        groupModal.modal('hide');
+        if (!isSelected()) return false;
+          jsFormUrl = '{{ path('add_users_group') }}';
+          ajaxPost('groupset', function(data){
+            alert('Les adhérants séléctionnées ont été ajouté au groupe '+data.name);
+          });
+      });
+
+      /* send mail */
+      mailBtn.on('click', function(){
+        mailModal.find('.obj').parent().parent().show();
+        mailModal.find('h4').html($(this).text());
+        form.find('#logtype').val('mail');
+        mailModal.modal('show');
+      });
+      smsBtn.on('click', function(){
+        mailModal.find('.obj').parent().parent().hide();
+        mailModal.find('h4').html($(this).text());
+        form.find('#logtype').val('sms');
+        mailModal.modal('show');
+      });
+      mailModal.find('#js-sendmail').on('click', function(){
+        mailModal.modal('hide');
+        jsFormUrl = '{{ path('ben_mail') }}';
+        ajaxPost('mail');
+      });
+
+      /* call simulation */
+      var feedback = callModal.find('.feedback').hide(),
+          timerLabel = callModal.find('#timer').css('opacity', 0),
+          userInput = feedback.find('#user'),
+          seconds = 0, minutes = 0, hours = 0, myTimer;
+      callModal.find('#hangup').on('click', function(){
+          feedback.slideDown().prev().slideUp();
+      });
+      feedback.find('#sendFeedback').on('click', function(){
+          callModal.modal('hide');
+          jsFormUrl = '{{ path('add_users_log') }}';
+          ajaxPost('call');
+          feedback.hide().prev().show();
+          seconds = 0; minutes = 0; hours = 0;
+          timerLabel.text('00:00');
+          timerLabel.css('opacity', 0).prev().css('opacity', 1);
+          clearTimeout(myTimer);
+      });
+    form.on('click', '.js-call', function(){
+        form.find('#logtype').val('appel');
+        callModal.find('.number').html('+212'+$(this).data('call').substr(1));
+        userInput.val($(this).data('id'));
+        callModal.modal('show');
+        setTimeout(function(){
+          timer();
+          timerLabel.css('opacity', 1).prev().css('opacity', 0);
+        }, 3000);
+        
+    });
+
+    function add() {
+        seconds++;
+        if (seconds >= 60) {
+            seconds = 0;
+            minutes++;
+            if (minutes >= 60) {
+                minutes = 0;
+                hours++;
+            }
+        }
+        time = (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" + (seconds > 9 ? seconds : "0" + seconds);
+        timerLabel.text(time);
+        timer();
+    }
+    function timer() {
+        myTimer = setTimeout(add, 1000);
+    }
+
+    })(jQuery);
+</script>
+{% endblock %}
+

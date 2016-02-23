@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Badge</title>
+    {% set addr = 'http://' ~ app.request.server.get('SERVER_ADDR') %} 
+    <link href="{{ addr ~ asset('bootstrap/css/bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ addr ~ asset('css/main.css') }}" rel="stylesheet"><!-- Loading my css -->
+    <style type="text/css"> 
+    .mybadge {
+      background: {{ app_config.badge_bgcolor}};
+      color: {{ app_config.badge_color}};
+      }
+      .mybadge .footer{ 
+        color: {{ app_config.badge_footer_color}};
+        background: {{ app_config.badge_footer_bgcolor}};
+      }
+      {{ app_config.org_carte_css}} 
+
+    </style>
+</head>
+<body>
+<header class="print-header">
+  <div class="pull-right"><img src="{{ addr ~ asset(app_config.org_logo) }}" alt="logo"/></div>
+  <h1>{{ app_config.org_name }}</h1> 
+  <div class="clearfix"></div>
+</header>
+
+  <h3><span class="glyphicon glyphicon-user"></span> Badges des adhérants</h3>
+  <h3></h3>
+  <div>
+    {% for entity in entities %}
+    <div class="box mybadge printed-badge">
+      <img class="pull-left pic" src="{{ addr ~ asset( entity.profile.image.getwebpath)}}"/>
+      <img class="pull-right logo" src="{{ addr ~ asset(app_config.org_logo) }}"/>
+      <h2>{{ app_config.org_name }}</h2>
+      <ul class="list-unstyled">
+          <li><strong>{{ entity.profile.firstName }} {{ entity.profile.familyName }}</strong></li>
+          <li>{{ entity.email }}</li>
+      </ul>
+      <div class="footer label-primary">
+         <span>{{ app_config.org_slogan }}</span>
+          <span class="pull-right">{{"now"|date('Y')}}</span>
+      </div>
+    </div>
+    <div class="box mybadge printed-badge">
+      <div class="js-barcode" data-id="{{ entity.profile.barcode }}"></div>
+      <div class="footer label-primary">
+          <span>Date d'inscription: {{ entity.created|date('Y-m-d') }}</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  {% endfor %}
+    <div class="clearfix"></div>
+  </div>
+  <div class="pull-right">
+      Fait à {{ app_config.org_city }} le {{ 'now'|date('d/m/Y')}}
+  </div>
+</body>
+</html>
+
+<script src="{{ addr ~ asset('js/jquery-1.8.3.min.js') }}"></script>
+<script src="{{ addr ~ asset('js/jquery-barcode.min.js') }}"></script>
+<script> 
+    (function($) {
+      $(".js-barcode").each(function(){
+        $(this).barcode($(this).data('id')+"", "codabar");   
+      });
+          
+    })(jQuery);
+</script>

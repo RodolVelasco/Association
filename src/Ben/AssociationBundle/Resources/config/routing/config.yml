@@ -1,0 +1,17 @@
+config:
+    pattern:  /
+    defaults: { _controller: "BenAssociationBundle:config:index" }
+
+config_update:
+    pattern:  /update
+    defaults: { _controller: "BenAssociationBundle:config:update" }
+    requirements: { _method: post }
+
+config_update_lang:
+    pattern:  /update/lang
+    defaults: { _controller: "BenAssociationBundle:config:updateLang" }
+    requirements: { _method: post }
+
+config_update_fields:
+    pattern:  /fields
+    defaults: { _controller: "BenAssociationBundle:config:updateFileds" }

@@ -1,0 +1,253 @@
+{% extends "BenAssociationBundle::layout.html.twig" %}
+{% block title %}
+{{'ben.menu.dashboard'|trans}} | {{ parent() }}
+{% endblock %}
+
+
+ {% block stylesheet %}
+ 	{{ parent() }}
+    <link href="{{ asset('css/graph.css') }}" rel="stylesheet"><!-- Loading my css -->
+ {% endblock %}
+
+{% block body %}
+<h2 style="margin-bottom: 5px;"><span class="glyphicon glyphicon-dashboard"></span> {{'ben.menu.dashboard'|trans}}</h2>			
+<div class="row">
+	<div class="col-md-4">
+		<div class="box widget-body">
+	        <header>
+	        	<h3><span class="glyphicon glyphicon-user"></span> Liste des commissions
+	        	<i class="js-toggle pull-right glyphicon glyphicon-chevron-up glyphicon-chevron-down"></i></h3>
+	        </header>
+            <ul class="list-group hideme">
+              {% for entity in groups %}
+              <li class="list-group-item">
+              <a href="{{ path('group_show', {id: entity.id, perPage: app_config.rows_per_page }) }}">
+              {{ entity.getName() }}</a> <span class="badge">{{ entity.getUsers()|length }}</span>
+              </li>
+              {% endfor %}
+            </ul>
+	    </div>
+{# 		<div class="box widget-body">
+	        <header>
+	        	<h3><span class="glyphicon glyphicon-stats"></span> Statistiques par ville
+	        	<i class="js-toggle pull-right glyphicon glyphicon-chevron-up"></i></h3>
+	        </header>
+            <ul class="list-group">
+              {% for item in stats.city %}
+              <li class="list-group-item">
+              <span class="mylabel">{{ item.label }}</span> <span class="badge">{{ item.data }}</span>
+				<div class="progress">
+	            	<div class="progress-bar" style="width: {{ item.percentage }}%;"></div>
+	          	</div>
+              </li>
+              {% endfor %}
+            </ul>
+	    </div> #}
+	</div>
+	<div class="col-md-8">
+	<div class="row">
+		
+	<div class="col-md-3 col-xs-6">
+	<div class="stat-boxes widget-body">
+		<a href="{{ path('ben_users') }}"><span class="fui-user ben-icone"></span></a>
+		<h3 class="ticker--one">{{ counter.user }}</h3>
+		<i>{{'ben.menu.members'|trans}}</i>
+		<div class="clearfix"></div>		
+	</div>
+	</div>
+	<div class="col-md-3 col-xs-6">
+		<div class="stat-boxes widget-body">
+			<a href="{{ path('group') }}"><span class="fui-myspace ben-icone"></span></a>
+			<h3 class="ticker--one">{{ counter.group }}</h3>
+			<i>{{'ben.menu.groups'|trans}}</i>
+			<div class="clearfix"></div>		
+		</div>
+	</div>
+	<div class="col-md-3 col-xs-6">
+		<div class="stat-boxes widget-body">
+			<a href="{{ path('event') }}"><span class="fui-time ben-icone"></span></a>
+			<h3 class="ticker--one">{{ counter.event }}</h3>
+			<i>{{'ben.menu.events'|trans}}</i>
+			<div class="clearfix"></div>		
+		</div>
+	</div>
+	<div class="col-md-3 col-xs-6">
+		<div class="stat-boxes widget-body">
+			<a href="{{ path('cotisation') }}"><span class="glyphicon glyphicon-usd ben-icone"></span></a>
+			<h3 class="ticker--one">{{ counter.cotisation }}</h3>
+			<i>{{'ben.menu.cotisation'|trans}}</i>
+			<div class="clearfix"></div>		
+		</div>
+	</div>
+	<div class="col-md-3 col-xs-6">
+		<div class="stat-boxes widget-body">
+			<a href="{{ path('status') }}"><span class="fui-tag ben-icone"></span></a>
+			<h3 class="ticker--one">{{ counter.status }}</h3>
+			<i>{{'ben.menu.status'|trans}}</i>
+			<div class="clearfix"></div>		
+		</div>
+	</div>
+	<div class="col-md-3 col-xs-6">
+		<div class="stat-boxes widget-body">
+			<a href="{{ path('fos_message_inbox') }}"><span class="glyphicon glyphicon-envelope ben-icone"></span></a>
+			<h3 class="ticker--one">{{ fos_message_nb_unread() }}</h3>
+			<i>{{ 'ben.menu.messages'|trans }}</i>
+			<div class="clearfix"></div>		
+		</div>
+	</div>
+	</div>
+	</div>
+	<div class="col-md-12">
+		<div class="box widget-body">
+	        <header>
+	        	<h3><span class="glyphicon glyphicon-globe"></span> {{'ben.meta.map'|trans}}
+	        	<i class="js-toggle pull-right glyphicon glyphicon-chevron-up"></i></h3>
+	        </header>
+			<div class="map-warper">
+				<div id="js-map"></div> 
+			</div>
+	    </div>
+	</div>
+</div>
+<div class="col-md-6">
+	<!-- Graph HTML -->
+<div id="graph-wrapper">
+	<div id="statChartFlotLineA"></div>
+</div>
+<!-- end Graph HTML -->
+</div>
+
+
+<div class="clearfix"></div>
+{% endblock body %}
+
+{% block javascripts %}
+{{ parent() }}
+
+    <script src="{{ asset('js/flot/jquery.flot.min.js') }}"></script>
+    <script src="{{ asset('js/flot/jquery.flot.pie.min.js') }}"></script>
+
+
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script> 
+
+
+<script> 
+    (function($) {
+
+ 
+// // Bars
+// $.plot($('#graph-bars'), graphData, {
+//     series: {
+//         bars: {
+//             show: true,
+//             barWidth: .9,
+//             align: 'center'
+//         },
+//         shadowSize: 0
+//     },
+//     grid: {
+//         color: '#646464',
+//         borderColor: 'transparent',
+//         borderWidth: 20,
+//         hoverable: true
+//     },
+//     xaxis: {
+//         tickColor: 'transparent',
+//         tickDecimals: 2
+//     },
+//     yaxis: {
+//         tickSize: 1000
+//     }
+// });
+
+// $('#graph-bars').hide();
+ 
+// $('#lines').on('click', function (e) {
+//     $('#bars').removeClass('active');
+//     $('#graph-bars').fadeOut();
+//     $(this).addClass('active');
+//     $('#graph-lines').fadeIn();
+//     e.preventDefault();
+// });
+ 
+// $('#bars').on('click', function (e) {
+//     $('#lines').removeClass('active');
+//     $('#graph-lines').fadeOut();
+//     $(this).addClass('active');
+//     $('#graph-bars').fadeIn().removeClass('hidden');
+//     e.preventDefault();
+// });
+
+// function showTooltip(x, y, contents) {
+//     $('<div id="tooltip">' + contents + '</div>').css({
+//         top: y - 16,
+//         left: x + 20
+//     }).appendTo('body').fadeIn();
+// }
+ 
+// var previousPoint = null;
+ 
+// $('#graph-lines, #graph-bars').bind('plothover', function (event, pos, item) {
+//     if (item) {
+//         if (previousPoint != item.dataIndex) {
+//             previousPoint = item.dataIndex;
+//             $('#tooltip').remove();
+//             var x = item.datapoint[0],
+//                 y = item.datapoint[1];
+//                 showTooltip(item.pageX, item.pageY, y + ' visitors at ' + x + '.00h');
+//         }
+//     } else {
+//         $('#tooltip').remove();
+//         previousPoint = null;
+//     }
+// });
+
+    var styles = [  
+	  //       {  
+			//     featureType: 'poi',  
+			//     elementType: 'geometry',  
+			//     stylers: [  
+			//         { hue: '#f9e0b7' },  
+			//         { lightness: 30 }  
+			//     ]  
+			// },
+			// {  
+			//     featureType: 'road',  
+			//     elementType: 'geometry',  
+			//     stylers: [  
+			//         { hue: '#d5c18c' },  
+			//         { lightness: 14 }  
+			//     ]  
+			// },
+			// {  
+			//     featureType: 'road.local',  
+			//     elementType: 'all',  
+			//     stylers: [  
+			//         { hue: '#ffd7a6' },  
+			//         { saturation: 100 },  
+			//         { lightness: -12 }  
+			//     ]  
+			// }  
+	    ],
+	    options = {  
+		    mapTypeControlOptions: {  
+		        mapTypeIds: ['Styled']  
+		    },  
+	        center: new google.maps.LatLng({{app_config.org_map_lat}}, {{app_config.org_map_lng}}),  
+	        zoom: 16,  
+	        disableDefaultUI: true,   
+	        mapTypeId: 'Styled'  
+    	},
+    	mapContainer = document.getElementById('js-map'); 
+    	map = new google.maps.Map(mapContainer, options),
+    	styledMapType = new google.maps.StyledMapType(styles, { name: 'Styled' });  
+    	map.mapTypes.set('Styled', styledMapType); 
+    	marker = new google.maps.Marker({
+		    position: options.center,
+		    map: map,
+		    animation: google.maps.Animation.DROP
+		});
+
+    })(jQuery);
+</script>
+{% endblock %}

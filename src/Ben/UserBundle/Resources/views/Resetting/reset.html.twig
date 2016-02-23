@@ -1,0 +1,33 @@
+{% extends "BenAssociationBundle::layout.html.twig" %}
+{% block title %}
+Login - {{ parent() }}
+{% endblock %}
+{% block stylesheet %}
+    {{ parent() }}
+    <link href="{{ asset('css/login.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block container %}
+<body class="login-screen">
+    
+    {% include "BenAssociationBundle:Default:flashes.html.twig" %}
+    <form action="{{ path('fos_user_resetting_reset', {'token': token}) }}" {{ form_enctype(form) }} method="POST">
+    {{ form_widget(form) }}
+    <div>
+        <input type="submit" class="btn btn-primary btn-lg btn-block" value="{{ 'resetting.reset.submit'|trans({}, 'FOSUserBundle') }}" />
+    </div>
+	</form>
+</body>
+    <script src="{{ asset('js/jquery-1.8.3.min.js') }}"></script>
+    <script src="{{ asset('js/jquery-ui-1.10.3.custom.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap-select.js') }}"></script>
+    <script src="{{ asset('js/flatui-checkbox.js') }}"></script>
+    <script src="{{ asset('js/application.js') }}"></script>
+    <script type="text/javascript">
+    (function($) {
+
+    })(jQuery);
+    </script>
+
+{% endblock container %}

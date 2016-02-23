@@ -1,0 +1,52 @@
+<div class="tabbable">
+    <ul class="nav nav-tabs">
+      <li class="active"><a href="#tab1"><span class="fui-user"></span> {{ 'user.meta.identity'|trans }}</a></li>
+      <li><a href="#tab2"><span class="fui-book"></span> {{ 'user.meta.contact'|trans }}</a></li>
+      <li><a href="#tab3"><span class="fui-myspace"></span> {{ 'user.meta.association'|trans }}</a></li>
+    </ul> <!-- /tabs -->
+	 <div class="tab-content">
+        <div class="tab-pane active" id="tab1">
+              <div class="form-group">
+                <label for="" class="col-sm-4 control-label">{{ 'user.form.profile.avatar'|trans }}</label>
+                <div class="col-sm-4">
+                  <img class="myavatar col-md-4" src="{{ asset( entity.profile.image.getwebpath)}}">
+                </div>
+              </div>
+              {{ form_row(form.profile.image.file) }}
+              {{ form_row(form.profile.family_name) }}
+              {{ form_row(form.profile.first_name) }}
+              {{ form_row(form.profile.cin) }}
+              {{ form_row(form.profile.barcode) }}
+              {{ form_row(form.profile.gender) }}
+              {{ form_row(form.profile.birthday) }}
+              {{ form_row(form.profile.job) }}
+              {{ form_row(form.profile.diplome) }}
+              {{ form_row(form.profile.expertise) }}
+        </div><!-- /tab1 -->
+
+				<div class="tab-pane" id="tab2">
+              {{ form_row(form.profile.address) }}
+              {{ form_row(form.profile.post_code) }}
+              {{ form_row(form.profile.city) }}
+              {{ form_row(form.profile.contry) }}
+              {{ form_row(form.profile.tel) }}
+              {{ form_row(form.profile.gsm) }}
+              {{ form_row(form.email) }}
+				</div><!-- /tab2 -->
+
+        <div class="tab-pane" id="tab3">
+              {{ form_row(form.enabled) }}
+              {{ form_row(form.username) }}
+              {{ form_row(form.plainpassword) }}
+              {{ form_row(form.profile.method) }}
+              {{ form_row(form.profile.frequence) }}
+              {{ form_row(form.profile.montant) }}
+              {{ form_row(form.profile.description) }}
+              {{ form_row(form.groups) }}
+              {{ form_rest(form) }}
+        </div><!-- /tab3 -->
+
+   	</div> <!-- /tab-content -->
+</div>
+
+            

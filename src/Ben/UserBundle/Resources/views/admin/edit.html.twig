@@ -1,0 +1,28 @@
+{% extends "BenAssociationBundle::layout.html.twig" %}
+{% block title %}
+{{ 'user.action.edit'|trans }} | {{ parent() }}
+{% endblock %}
+{% block body %}
+
+  <h2><span class="fui-user"></span> {{ 'user.action.edit'|trans }}</h2>     
+	<form class="form-horizontal" action="{{ path('ben_update_user', {id: entity.id})}}" method="POST" role="form" {{ form_enctype(form) }}>
+		{% include "BenUserBundle:admin:form.html.twig" %}
+
+
+
+    <div class="form-group">
+      <div class="col-sm-offset-4 col-sm-4">
+        <button type="submit" name="subvalider" class="btn btn-primary btn-embossed"><span class="fui-new"></span>  {{ 'ben.action.edit'|trans }}</button>
+      </div>
+    </div>
+
+	</form> 
+{% endblock body %}
+
+ {% block javascripts %}
+{{ parent() }}
+<script> 
+    (function($) {
+    })(jQuery);
+</script>
+{% endblock %}

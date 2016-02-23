@@ -1,0 +1,25 @@
+services:
+    activity_listener:
+        class: Ben\UserBundle\Listener\ActivityListener
+        arguments: ["@security.context", "@doctrine.orm.entity_manager"]
+        tags:
+            - { name: kernel.event_listener, event: kernel.controller, method: onCoreController }
+    security_listener:
+        class: Ben\UserBundle\Listener\SecurityListener
+        arguments: ["@router", "@security.context", "@event_dispatcher", "@doctrine.orm.entity_manager"]
+        tags:
+            - { name: kernel.event_listener, event: security.interactive_login, method: onSecurityInteractiveLogin }
+    # activitylog_listener:
+    #     class: Ben\UserBundle\Listener\ActivityLogListener
+    #     arguments: ["@service_container"]
+    #     tags:
+    #       - { name: doctrine.event_listener, event: postPersist }
+    #       - { name: doctrine.event_listener, event: postUpdate }
+    #       - { name: doctrine.event_listener, event: preRemove }
+    #       - { name: doctrine.event_listener, event: postRemove }
+
+    ben.locale_listener:
+        class: Ben\UserBundle\Listener\LocaleListener
+        arguments: ["%kernel.default_locale%"]
+        tags:
+            - { name: kernel.event_subscriber }

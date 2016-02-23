@@ -1,0 +1,37 @@
+{% extends "BenAssociationBundle::layout.html.twig" %}
+{% block title %}
+{{ 'status.action.edit'|trans }} | {{ parent() }}
+{% endblock %}
+{% block body %}
+<h2><span class="fui-tag"></span> {{ 'status.action.edit'|trans }}</h2>
+<form id="createForm" class="form-horizontal" action="{{ path('status_update', { 'id': entity.id }) }}" method="post" {{ form_enctype(edit_form) }}>
+    {{ form_widget(edit_form) }}
+
+    <div class="form-group">
+      <div class="col-md-offset-4 col-md-4">
+        <button type="submit" class="btn btn-primary btn-embossed"><span class="glyphicon glyphicon-edit"></span> {{'ben.action.edit'|trans}}</button>
+        {% if is_granted("ROLE_ADMIN") %}
+        <button id="js-delete" class="btn btn-embossed btn-danger" data-id="{{entity.name}}"><span class="fui-cross"></span> {{'ben.action.delete'|trans}} </button>
+        {% endif %}
+      </div>
+    </div>
+            
+</form>
+
+<form id="deleteForm" action="{{ path('status_delete', { 'id': entity.id }) }}" method="post">
+    {{ form_widget(delete_form) }}
+</form>
+
+{% endblock body %}
+{% block javascripts %}
+{{ parent() }}
+<script> 
+    (function($) {
+
+        $('#js-delete').on('click', function(){
+            (confirmation('voullez-vous vraiment supprimer le status '+$(this).data('id'))) && $('#deleteForm').submit();
+            return false;
+        });
+    })(jQuery);
+</script>
+{% endblock %}

@@ -1,0 +1,182 @@
+{% extends "BenAssociationBundle::layout.html.twig" %}
+{% block title %}
+{{ 'event.meta.calendar'|trans }} | {{ parent() }}
+{% endblock %}
+
+{% block stylesheet %}
+    {{ parent() }}
+    <link href="{{ asset('css/fullcalendar.css') }}" rel="stylesheet">
+    <link href="{{ asset('qtip2/jquery.qtip.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+<div class="row">
+  <div class="col-xs-10"><h2><span class="fui-calendar"></span>  {{ 'event.meta.calendar'|trans }}</h2></div>
+  <div class="col-xs-2"><a href="{{ path('event_ftp') }}" class="btn btn-inverse btn-sm btn-block"><span class="glyphicon glyphicon-share"></span> {{'event.action.ftp'|trans}}</a></div>
+</div>
+
+<div id="calendar"></div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    <form id="postForm" role="form" class="form-horizontal" method="post" action="{{ path('event_create') }}">
+      <div class="modal-header">
+        <button type="button" class="close fui-cross" data-dismiss="modal" aria-hidden="true"></button>
+        <h4 class="modal-title"><span class="glyphicon glyphicon-calendar"></span> {{ 'event.action.new'|trans }}</h4>
+      </div>
+      <div class="modal-body">
+      <input type="hidden" name="json" value="1">
+        <div class="datacontainer">
+        {{ form_widget(form) }}
+        </div>
+          <div class="clearfix"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary btn-embossed">{{ 'ben.action.valide'|trans }}</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock body %}
+{% block javascripts %}
+{{ parent() }}
+<script src="{{ asset('js/moment.min.js') }}"></script>
+<script src="{{ asset('js/jquery-ui.custom.min.js') }}"></script>
+<script src="{{ asset('js/fullcalendar.min.js') }}"></script><!-- Full Calendar -->
+{% if app.request.locale != 'en' %}
+<script src="{{ asset('js/lang/'~app.request.locale~'.js') }}"></script><!-- Full Calendar -->
+{% endif %}
+<script src="{{ asset('qtip2/jquery.qtip.js') }}"></script>
+<script>  
+    (function($) {
+
+      var modal = $('#myModal'),
+          workingArea= modal.find('.modal-content'),
+          postForm = modal.find('#postForm'),
+          inputFrom = postForm.find('#event_form_date_from'),
+          inputTo = postForm.find('#event_form_date_to'),
+          closeBtn = modal.find('.close');
+
+          postForm.find('div.col-md-4').removeClass('col-md-4').addClass('col-md-6');
+          inputTo.closest('.form-group').hide().prev().hide();
+
+      postForm.on('submit', function(e) {
+        e.preventDefault();
+        ajaxPost(postForm);
+        return false;
+      });
+      function update (event) {
+        var url = '{{ path('event_update_date', { 'id': '@@' }) }}',
+            action = postForm.attr('action');
+        url = url.replace("@@", event.id);
+        postForm.attr('action', url);
+        inputFrom.val(event.start);
+        inputTo.val(event.end);
+        postForm.trigger('submit');
+        postForm.attr('action', action);
+      }
+      function ajaxPost(form, action) {
+        var dataContainer = form.find('.dataContainer');
+        workingArea.addClass('working');
+        $.ajax({ 
+          type: "POST", 
+          data: form.serialize(),
+          url: form.attr('action'), 
+          success: function(data){ 
+            workingArea.removeClass('working');
+            if(data.id) {
+              var url = '{{ path('event_show', { 'id': '@@' }) }}';
+              data.url = url.replace("@@", data.id);
+              calendar.fullCalendar('renderEvent',data, true);
+              calendar.fullCalendar('unselect');
+              closeBtn.trigger('click');
+            }
+            else dataContainer.empty().hide().html(data).fadeIn();
+          },
+          error:function(){
+              workingArea.removeClass('working');
+          }
+        });
+        return false;
+      }
+
+    /* calendar */
+    var date = new Date(),
+        d = date.getDate(),
+        m = date.getMonth(),
+        y = date.getFullYear();
+    
+    var calendar = $('#calendar').fullCalendar({
+      header: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'month,agendaWeek,agendaDay'
+      },
+      selectable: true,
+      selectHelper: true,
+      editable: true,
+      select: function(start, end, allDay) {
+        inputFrom.val(start);
+        inputTo.val(end);
+        modal.modal('show');
+      },
+      eventRender: function(event, element) {
+        element.qtip({    
+            content: {    
+                title: { text: event.title },
+                text: '<b>{{ 'event.meta.date'|trans }}: </b>' + (moment(event.start).format('MM/DD/YYYY à hh:mm')) + '<br><b>{{ 'event.form.type'|trans }}: </b>'+event.type+'<br><b>{{ 'event.form.groups'|trans }}: </b>'+event.groups+'<br><b>{{ 'event.form.description'|trans }}: </b>'+event.description+'<br /><a href="'+event.url+'">{{ 'ben.action.more'|trans }}</a>'     
+            },
+            style: { 
+              classes: 'qtip-bootstrap', 
+              tip: {corner: 'left center'}
+            },         
+            position: {
+              my: 'bottom  center',
+              at: 'top center',
+              target: 'mouse',
+              adjust: {
+                  mouse: false
+              }
+            }
+        });
+      }
+/*      eventMouseover: function( event, jsEvent, view ) { 
+          var item = $(this).css('z-index','9');
+          if(item.find('.nube').length == 0){
+              var info = '<div class="nube"><h2>'+event.title+'</h2><ul class="list-unstyled"> <li><strong>{{ 'event.form.type'|trans }} :</strong>'+event.type+'</li> <li><strong>{{ 'event.form.groups'|trans }}: </strong>'+event.groups+'</li> <li><a href="'+event.url+'">{{ 'ben.action.more'|trans }}</a></li> </ul></div>';
+              item.append(info);
+          }
+          item.find('.nube').stop(true,true).fadeIn();
+      },
+      eventMouseout: function( event, jsEvent, view ) { 
+          var item = $(this);
+          item.css('z-index','1').find('.nube').stop(true,true).fadeOut(200);
+      }*/,
+      eventDrop: function(event, delta) {
+          update(event);
+      },
+      eventResize: function(event, delta) {
+          update(event);
+      },
+      events: [
+      {% for entity in entities %}
+        {
+          id: {{ entity.id }},
+          title: '{{ entity.name }}',
+          type: '{{ entity.type }}',
+          groups: '{{ entity.getGroupList }}',
+          description: hereDoc(function() {/*!"{{ entity.description | replace({"\n":" "}) }}"*/}),
+          start: new Date('{{ entity.datefrom|date('Y-m-d H:i:s') }}'),
+          end: new Date('{{ entity.dateto|date('Y-m-d H:i:s') }}'),
+          url: '{{ path('event_show', { 'id': entity.id }) }}'
+        }{{ loop.last ? '' : ',' }}
+      {% endfor %}
+      ]
+    });
+
+    })(jQuery);
+</script>
+{% endblock %}

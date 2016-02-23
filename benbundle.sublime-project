@@ -1,0 +1,26 @@
+{
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				".php(~)"
+			],
+			"folder_exclude_patterns":
+			[
+				"Tests",
+				"nbproject"
+			],
+			"follow_symlinks": true,
+			"path": "."
+		},
+		{
+			"follow_symlinks": true,
+			"path": "src\\Ben"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "src\\Ben\\AssociationBundle\\Resources\\views"
+		}
+	]
+}

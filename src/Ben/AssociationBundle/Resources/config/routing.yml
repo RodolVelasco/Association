@@ -1,0 +1,23 @@
+BenAssociationBundle_Default:
+    resource: "@BenAssociationBundle/Resources/config/routing/default.yml"
+    prefix:   /default
+
+BenAssociationBundle_config:
+        resource: "@BenAssociationBundle/Resources/config/routing/config.yml"
+        prefix:   /config
+
+BenAssociationBundle_event:
+        resource: "@BenAssociationBundle/Resources/config/routing/event.yml"
+        prefix:   /event
+
+BenAssociationBundle_status:
+        resource: "@BenAssociationBundle/Resources/config/routing/status.yml"
+        prefix:   /status
+
+BenAssociationBundle_cotisation:
+        resource: "@BenAssociationBundle/Resources/config/routing/cotisation.yml"
+        prefix:   /cotisation
+
+BenAssociationBundle_avancement:
+        resource: "@BenAssociationBundle/Resources/config/routing/avancement.yml"
+        prefix:   /avancement

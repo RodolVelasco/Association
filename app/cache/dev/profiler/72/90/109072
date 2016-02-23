@@ -1,0 +1,590 @@
+a:8:{s:5:"token";s:6:"109072";s:6:"parent";N;s:8:"children";a:0:{}s:4:"data";a:11:{s:6:"config";C:62:"Symfony\Component\HttpKernel\DataCollector\ConfigDataCollector":2782:{a:11:{s:5:"token";s:6:"109072";s:15:"symfony_version";s:6:"2.1.13";s:4:"name";s:3:"app";s:3:"env";s:3:"dev";s:5:"debug";b:1;s:11:"php_version";s:17:"5.5.9-1ubuntu4.14";s:14:"xdebug_enabled";b:1;s:14:"eaccel_enabled";b:0;s:11:"apc_enabled";b:0;s:14:"xcache_enabled";b:0;s:7:"bundles";a:21:{s:15:"FrameworkBundle";s:92:"/home/ubuntu/workspace/Association/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle";s:14:"SecurityBundle";s:91:"/home/ubuntu/workspace/Association/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle";s:10:"TwigBundle";s:87:"/home/ubuntu/workspace/Association/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle";s:13:"MonologBundle";s:93:"/home/ubuntu/workspace/Association/vendor/symfony/monolog-bundle/Symfony/Bundle/MonologBundle";s:17:"SwiftmailerBundle";s:101:"/home/ubuntu/workspace/Association/vendor/symfony/swiftmailer-bundle/Symfony/Bundle/SwiftmailerBundle";s:13:"AsseticBundle";s:93:"/home/ubuntu/workspace/Association/vendor/symfony/assetic-bundle/Symfony/Bundle/AsseticBundle";s:14:"DoctrineBundle";s:97:"/home/ubuntu/workspace/Association/vendor/doctrine/doctrine-bundle/Doctrine/Bundle/DoctrineBundle";s:26:"SensioFrameworkExtraBundle";s:106:"/home/ubuntu/workspace/Association/vendor/sensio/framework-extra-bundle/Sensio/Bundle/FrameworkExtraBundle";s:12:"JMSAopBundle";s:70:"/home/ubuntu/workspace/Association/vendor/jms/aop-bundle/JMS/AopBundle";s:16:"JMSDiExtraBundle";s:79:"/home/ubuntu/workspace/Association/vendor/jms/di-extra-bundle/JMS/DiExtraBundle";s:22:"JMSSecurityExtraBundle";s:91:"/home/ubuntu/workspace/Association/vendor/jms/security-extra-bundle/JMS/SecurityExtraBundle";s:13:"FOSUserBundle";s:85:"/home/ubuntu/workspace/Association/vendor/friendsofsymfony/user-bundle/FOS/UserBundle";s:16:"FOSMessageBundle";s:91:"/home/ubuntu/workspace/Association/vendor/friendsofsymfony/message-bundle/FOS/MessageBundle";s:20:"BenAssociationBundle";s:60:"/home/ubuntu/workspace/Association/src/Ben/AssociationBundle";s:13:"BenUserBundle";s:53:"/home/ubuntu/workspace/Association/src/Ben/UserBundle";s:16:"BenMessageBundle";s:56:"/home/ubuntu/workspace/Association/src/Ben/MessageBundle";s:15:"KnpSnappyBundle";s:91:"/home/ubuntu/workspace/Association/vendor/knplabs/knp-snappy-bundle/Knp/Bundle/SnappyBundle";s:18:"LiuggioExcelBundle";s:81:"/home/ubuntu/workspace/Association/vendor/liuggio/ExcelBundle/Liuggio/ExcelBundle";s:17:"WebProfilerBundle";s:94:"/home/ubuntu/workspace/Association/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle";s:24:"SensioDistributionBundle";s:101:"/home/ubuntu/workspace/Association/vendor/sensio/distribution-bundle/Sensio/Bundle/DistributionBundle";s:21:"SensioGeneratorBundle";s:95:"/home/ubuntu/workspace/Association/vendor/sensio/generator-bundle/Sensio/Bundle/GeneratorBundle";}}}s:7:"request";C:63:"Symfony\Component\HttpKernel\DataCollector\RequestDataCollector":6052:{a:16:{s:6:"format";s:4:"html";s:7:"content";s:0:"";s:12:"content_type";s:9:"text/html";s:11:"status_code";i:200;s:13:"request_query";a:0:{}s:15:"request_request";a:0:{}s:15:"request_headers";a:14:{s:4:"host";a:1:{i:0;s:30:"mws-rodolvelasco.c9users.io:80";}s:6:"accept";a:1:{i:0;s:74:"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8";}s:25:"upgrade-insecure-requests";a:1:{i:0;s:1:"1";}s:10:"user-agent";a:1:{i:0;s:114:"Mozilla/5.0 (X11; CrOS x86_64 7647.84.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36";}s:7:"referer";a:1:{i:0;s:72:"http://mws-rodolvelasco.c9users.io/Association/web/app_dev.php/adherants";}s:15:"accept-encoding";a:1:{i:0;s:19:"gzip, deflate, sdch";}s:15:"accept-language";a:1:{i:0;s:11:"es,en;q=0.8";}s:6:"cookie";a:1:{i:0;s:237:"shelf_class=; XDEBUG_SESSION=cloud9ide; PHPSESSID=nlsc1nll1032p7p1d78o5t0tg1; REMEMBERME=QmVuXFVzZXJCdW5kbGVcRW50aXR5XFVzZXI6WVdSdGFXND06MTQ1NjgxMTQyNTo2N2NkODMzYjNjMzk0MWIyNmJmY2M2OTM5ZjVkYzExMzcxYmJlYmU1YTU3Mzc0MjhkYzNiMmY5OTRhMjNiYmQ5";}s:13:"cache-control";a:1:{i:0;s:11:"max-stale=0";}s:17:"x-forwarded-proto";a:1:{i:0;s:4:"http";}s:16:"x-forwarded-port";a:1:{i:0;s:2:"80";}s:15:"x-forwarded-for";a:1:{i:0;s:12:"179.5.39.137";}s:10:"connection";a:1:{i:0;s:10:"keep-alive";}s:14:"x-php-ob-level";a:1:{i:0;i:1;}}s:14:"request_server";a:39:{s:9:"HTTP_HOST";s:30:"mws-rodolvelasco.c9users.io:80";s:11:"HTTP_ACCEPT";s:74:"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8";s:30:"HTTP_UPGRADE_INSECURE_REQUESTS";s:1:"1";s:15:"HTTP_USER_AGENT";s:114:"Mozilla/5.0 (X11; CrOS x86_64 7647.84.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36";s:12:"HTTP_REFERER";s:72:"http://mws-rodolvelasco.c9users.io/Association/web/app_dev.php/adherants";s:20:"HTTP_ACCEPT_ENCODING";s:19:"gzip, deflate, sdch";s:20:"HTTP_ACCEPT_LANGUAGE";s:11:"es,en;q=0.8";s:11:"HTTP_COOKIE";s:237:"shelf_class=; XDEBUG_SESSION=cloud9ide; PHPSESSID=nlsc1nll1032p7p1d78o5t0tg1; REMEMBERME=QmVuXFVzZXJCdW5kbGVcRW50aXR5XFVzZXI6WVdSdGFXND06MTQ1NjgxMTQyNTo2N2NkODMzYjNjMzk0MWIyNmJmY2M2OTM5ZjVkYzExMzcxYmJlYmU1YTU3Mzc0MjhkYzNiMmY5OTRhMjNiYmQ5";s:18:"HTTP_CACHE_CONTROL";s:11:"max-stale=0";s:22:"HTTP_X_FORWARDED_PROTO";s:4:"http";s:21:"HTTP_X_FORWARDED_PORT";s:2:"80";s:20:"HTTP_X_FORWARDED_FOR";s:12:"179.5.39.137";s:15:"HTTP_CONNECTION";s:10:"keep-alive";s:4:"PATH";s:375:"/home/ubuntu/.nvm/versions/node/v4.2.4/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin";s:15:"LD_LIBRARY_PATH";s:15:"~/.c9/local/lib";s:16:"SERVER_SIGNATURE";s:87:"<address>Apache/2.4.7 (Ubuntu) Server at mws-rodolvelasco.c9users.io Port 80</address>
+";s:15:"SERVER_SOFTWARE";s:21:"Apache/2.4.7 (Ubuntu)";s:11:"SERVER_NAME";s:27:"mws-rodolvelasco.c9users.io";s:11:"SERVER_ADDR";s:13:"172.17.94.103";s:11:"SERVER_PORT";s:2:"80";s:11:"REMOTE_ADDR";s:12:"10.240.0.147";s:13:"DOCUMENT_ROOT";s:22:"/home/ubuntu/workspace";s:14:"REQUEST_SCHEME";s:5:"https";s:14:"CONTEXT_PREFIX";s:0:"";s:21:"CONTEXT_DOCUMENT_ROOT";s:22:"/home/ubuntu/workspace";s:12:"SERVER_ADMIN";s:18:"[no address given]";s:15:"SCRIPT_FILENAME";s:50:"/home/ubuntu/workspace/Association/web/app_dev.php";s:11:"REMOTE_PORT";s:5:"37728";s:17:"GATEWAY_INTERFACE";s:7:"CGI/1.1";s:15:"SERVER_PROTOCOL";s:8:"HTTP/1.1";s:14:"REQUEST_METHOD";s:3:"GET";s:12:"QUERY_STRING";s:0:"";s:11:"REQUEST_URI";s:44:"/Association/web/app_dev.php/printTicket/all";s:11:"SCRIPT_NAME";s:28:"/Association/web/app_dev.php";s:9:"PATH_INFO";s:16:"/printTicket/all";s:15:"PATH_TRANSLATED";s:38:"/home/ubuntu/workspace/printTicket/all";s:8:"PHP_SELF";s:44:"/Association/web/app_dev.php/printTicket/all";s:18:"REQUEST_TIME_FLOAT";d:1456207939.6359999;s:12:"REQUEST_TIME";i:1456207939;}s:15:"request_cookies";a:4:{s:11:"shelf_class";s:0:"";s:14:"XDEBUG_SESSION";s:9:"cloud9ide";s:9:"PHPSESSID";s:26:"nlsc1nll1032p7p1d78o5t0tg1";s:10:"REMEMBERME";s:148:"QmVuXFVzZXJCdW5kbGVcRW50aXR5XFVzZXI6WVdSdGFXND06MTQ1NjgxMTQyNTo2N2NkODMzYjNjMzk0MWIyNmJmY2M2OTM5ZjVkYzExMzcxYmJlYmU1YTU3Mzc0MjhkYzNiMmY5OTRhMjNiYmQ5";}s:18:"request_attributes";a:4:{s:11:"_controller";s:68:"Symfony\Bundle\TwigBundle\Controller\ExceptionController::showAction";s:9:"exception";s:63:"Object(Symfony\Component\HttpKernel\Exception\FlattenException)";s:6:"logger";s:37:"Object(Symfony\Bridge\Monolog\Logger)";s:6:"format";s:4:"html";}s:16:"response_headers";a:3:{s:13:"cache-control";a:1:{i:0;s:8:"no-cache";}s:4:"date";a:1:{i:0;s:29:"Tue, 23 Feb 2016 06:12:20 GMT";}s:13:"x-debug-token";a:1:{i:0;s:6:"109072";}}s:16:"session_metadata";a:3:{s:7:"Created";s:29:"Tue, 23 Feb 16 05:50:12 +0000";s:9:"Last used";s:29:"Tue, 23 Feb 16 06:12:06 +0000";s:8:"Lifetime";s:1:"0";}s:18:"session_attributes";a:1:{s:16:"_security_public";s:687:"C:74:"Symfony\Component\Security\Core\Authentication\Token\UsernamePasswordToken":599:{a:3:{i:0;N;i:1;s:6:"public";i:2;s:557:"a:4:{i:0;C:26:"Ben\UserBundle\Entity\User":221:{a:9:{i:0;s:88:"vxYZkKcA0OIWRwrn5L8cqb8q9IoOT0jXyM6MtuHddozsGAYEsKXwOP85CPLUmWn2ri234KMKeQUUtb530bLvNw==";i:1;s:31:"i1tqgxrnlb4gwgoc48gck0okck4g80o";i:2;s:5:"admin";i:3;s:5:"admin";i:4;b:0;i:5;b:0;i:6;b:0;i:7;b:1;i:8;i:1;}}i:1;b:1;i:2;a:2:{i:0;O:41:"Symfony\Component\Security\Core\Role\Role":1:{s:47:" Symfony\Component\Security\Core\Role\Role role";s:10:"ROLE_ADMIN";}i:1;O:41:"Symfony\Component\Security\Core\Role\Role":1:{s:47:" Symfony\Component\Security\Core\Role\Role role";s:9:"ROLE_USER";}}i:3;a:0:{}}";}}";}s:7:"flashes";a:0:{}s:9:"path_info";s:16:"/printTicket/all";s:10:"controller";a:4:{s:5:"class";s:56:"Symfony\Bundle\TwigBundle\Controller\ExceptionController";s:6:"method";s:10:"showAction";s:4:"file";s:122:"/home/ubuntu/workspace/Association/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Controller/ExceptionController.php";s:4:"line";i:39;}}}s:9:"exception";C:65:"Symfony\Component\HttpKernel\DataCollector\ExceptionDataCollector":32310:{a:1:{s:9:"exception";O:55:"Symfony\Component\HttpKernel\Exception\FlattenException":9:{s:64:" Symfony\Component\HttpKernel\Exception\FlattenException message";s:277:"The exit status code '127' says something went wrong:
+stderr: "sh: 1: C:/wkhtmltopdf/bin/wkhtmltopdf.exe: not found
+"
+stdout: ""
+command: C:/wkhtmltopdf/bin/wkhtmltopdf.exe --lowquality '/tmp/knp_snappy56cbf844916048.68849949.html' '/tmp/knp_snappy56cbf844916d40.40128735.pdf'.";s:61:" Symfony\Component\HttpKernel\Exception\FlattenException code";i:0;s:65:" Symfony\Component\HttpKernel\Exception\FlattenException previous";N;s:62:" Symfony\Component\HttpKernel\Exception\FlattenException trace";a:18:{i:0;a:8:{s:9:"namespace";s:0:"";s:11:"short_class";s:0:"";s:5:"class";s:0:"";s:4:"type";s:0:"";s:8:"function";s:0:"";s:4:"file";s:97:"/home/ubuntu/workspace/Association/vendor/knplabs/knp-snappy/src/Knp/Snappy/AbstractGenerator.php";s:4:"line";i:333;s:4:"args";a:0:{}}i:1;a:8:{s:9:"namespace";s:10:"Knp\Snappy";s:11:"short_class";s:17:"AbstractGenerator";s:5:"class";s:28:"Knp\Snappy\AbstractGenerator";s:4:"type";s:2:"->";s:8:"function";s:18:"checkProcessStatus";s:4:"file";s:97:"/home/ubuntu/workspace/Association/vendor/knplabs/knp-snappy/src/Knp/Snappy/AbstractGenerator.php";s:4:"line";i:148;s:4:"args";a:4:{i:0;a:2:{i:0;s:6:"string";i:1;s:3:"127";}i:1;a:2:{i:0;s:6:"string";i:1;s:0:"";}i:2;a:2:{i:0;s:6:"string";i:1;s:53:"sh: 1: C:/wkhtmltopdf/bin/wkhtmltopdf.exe: not found
+";}i:3;a:2:{i:0;s:6:"string";i:1;s:138:"C:/wkhtmltopdf/bin/wkhtmltopdf.exe --lowquality '/tmp/knp_snappy56cbf844916048.68849949.html' '/tmp/knp_snappy56cbf844916d40.40128735.pdf'";}}}i:2;a:8:{s:9:"namespace";s:10:"Knp\Snappy";s:11:"short_class";s:17:"AbstractGenerator";s:5:"class";s:28:"Knp\Snappy\AbstractGenerator";s:4:"type";s:2:"->";s:8:"function";s:8:"generate";s:4:"file";s:83:"/home/ubuntu/workspace/Association/vendor/knplabs/knp-snappy/src/Knp/Snappy/Pdf.php";s:4:"line";i:57;s:4:"args";a:4:{i:0;a:2:{i:0;s:5:"array";i:1;a:1:{i:0;a:2:{i:0;s:6:"string";i:1;s:43:"/tmp/knp_snappy56cbf844916048.68849949.html";}}}i:1;a:2:{i:0;s:6:"string";i:1;s:42:"/tmp/knp_snappy56cbf844916d40.40128735.pdf";}i:2;a:2:{i:0;s:5:"array";i:1;a:0:{}}i:3;a:2:{i:0;s:7:"boolean";i:1;b:0;}}}i:3;a:8:{s:9:"namespace";s:10:"Knp\Snappy";s:11:"short_class";s:3:"Pdf";s:5:"class";s:14:"Knp\Snappy\Pdf";s:4:"type";s:2:"->";s:8:"function";s:8:"generate";s:4:"file";s:97:"/home/ubuntu/workspace/Association/vendor/knplabs/knp-snappy/src/Knp/Snappy/AbstractGenerator.php";s:4:"line";i:177;s:4:"args";a:3:{i:0;a:2:{i:0;s:5:"array";i:1;a:1:{i:0;a:2:{i:0;s:6:"string";i:1;s:43:"/tmp/knp_snappy56cbf844916048.68849949.html";}}}i:1;a:2:{i:0;s:6:"string";i:1;s:42:"/tmp/knp_snappy56cbf844916d40.40128735.pdf";}i:2;a:2:{i:0;s:5:"array";i:1;a:0:{}}}}i:4;a:8:{s:9:"namespace";s:10:"Knp\Snappy";s:11:"short_class";s:17:"AbstractGenerator";s:5:"class";s:28:"Knp\Snappy\AbstractGenerator";s:4:"type";s:2:"->";s:8:"function";s:9:"getOutput";s:4:"file";s:97:"/home/ubuntu/workspace/Association/vendor/knplabs/knp-snappy/src/Knp/Snappy/AbstractGenerator.php";s:4:"line";i:198;s:4:"args";a:2:{i:0;a:2:{i:0;s:5:"array";i:1;a:1:{i:0;a:2:{i:0;s:6:"string";i:1;s:43:"/tmp/knp_snappy56cbf844916048.68849949.html";}}}i:1;a:2:{i:0;s:5:"array";i:1;a:0:{}}}}i:5;a:8:{s:9:"namespace";s:10:"Knp\Snappy";s:11:"short_class";s:17:"AbstractGenerator";s:5:"class";s:28:"Knp\Snappy\AbstractGenerator";s:4:"type";s:2:"->";s:8:"function";s:17:"getOutputFromHtml";s:4:"file";s:120:"/home/ubuntu/workspace/Association/vendor/knplabs/knp-snappy-bundle/Knp/Bundle/SnappyBundle/Snappy/LoggableGenerator.php";s:4:"line";i:88;s:4:"args";a:2:{i:0;a:2:{i:0;s:6:"string";i:1;s:11414:"<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Badge</title>
+     
+    <link href="http://172.17.94.103/Association/web/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="http://172.17.94.103/Association/web/css/main.css" rel="stylesheet"><!-- Loading my css -->
+    <style type="text/css"> /* put your css here */
+body{background: #FFFFFF;} </style>
+</head>
+<body>
+<header class="print-header">
+  <div class="pull-right"><img src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png" alt="logo"/></div>
+  <h1>Curiospress</h1> 
+  <div class="clearfix"></div>
+</header>
+
+  <h3><span class="glyphicon glyphicon-user"></span> Etiquettes des adhérants</h3>
+  <h3></h3>
+  <div>
+        <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>benaich med</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>abdelilah saif</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>jeffrey lise</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>Chris Brown</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>ely john</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>maldan abir</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>el arabi yasser</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>bougerr hatim</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>el amrani nahid</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>el hajji anoire</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>nadir siham</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>aznag salim</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>sarah houda</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>Arich sihame</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>Arich houda</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>benaich issam</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>nidal affaf</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>atih issam</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>badili islam</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>semouni youssef</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+        <div class="clearfix"></div>
+  </div>
+  <div class="pull-right">
+      Fait à Rabat le 23/02/2016
+  </div>
+</body>
+</html>
+";}i:1;a:2:{i:0;s:5:"array";i:1;a:0:{}}}}i:6;a:8:{s:9:"namespace";s:30:"Knp\Bundle\SnappyBundle\Snappy";s:11:"short_class";s:17:"LoggableGenerator";s:5:"class";s:48:"Knp\Bundle\SnappyBundle\Snappy\LoggableGenerator";s:4:"type";s:2:"->";s:8:"function";s:17:"getOutputFromHtml";s:4:"file";s:84:"/home/ubuntu/workspace/Association/src/Ben/UserBundle/Controller/AdminController.php";s:4:"line";i:388;s:4:"args";a:1:{i:0;a:2:{i:0;s:6:"string";i:1;s:11414:"<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Badge</title>
+     
+    <link href="http://172.17.94.103/Association/web/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="http://172.17.94.103/Association/web/css/main.css" rel="stylesheet"><!-- Loading my css -->
+    <style type="text/css"> /* put your css here */
+body{background: #FFFFFF;} </style>
+</head>
+<body>
+<header class="print-header">
+  <div class="pull-right"><img src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png" alt="logo"/></div>
+  <h1>Curiospress</h1> 
+  <div class="clearfix"></div>
+</header>
+
+  <h3><span class="glyphicon glyphicon-user"></span> Etiquettes des adhérants</h3>
+  <h3></h3>
+  <div>
+        <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>benaich med</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>abdelilah saif</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>jeffrey lise</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>Chris Brown</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>ely john</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>maldan abir</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>el arabi yasser</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>bougerr hatim</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>el amrani nahid</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>el hajji anoire</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>nadir siham</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>aznag salim</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>sarah houda</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>Arich sihame</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>Arich houda</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>benaich issam</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>nidal affaf</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>atih issam</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>badili islam</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+      <div class="box mybadge etiquette printed-badge">
+      <img class="pull-right logo" src="http://172.17.94.103/Association/web/uploads/img/d811f96097753f476a1dcc69c6870e312479613e.png"/>
+      <div class="js-barcode">
+        <ul class="list-unstyled">
+          <li><strong>semouni youssef</strong></li>
+          <li><strong>23/02/2016</strong></li>
+        </ul>
+      </div>
+      <div class="footer label-primary">
+          <span>Etiquette de repas</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+        <div class="clearfix"></div>
+  </div>
+  <div class="pull-right">
+      Fait à Rabat le 23/02/2016
+  </div>
+</body>
+</html>
+";}}}i:7;a:8:{s:9:"namespace";s:25:"Ben\UserBundle\Controller";s:11:"short_class";s:15:"AdminController";s:5:"class";s:41:"Ben\UserBundle\Controller\AdminController";s:4:"type";s:2:"->";s:8:"function";s:17:"printTicketAction";s:4:"file";N;s:4:"line";N;s:4:"args";a:1:{i:0;a:2:{i:0;s:6:"string";i:1;s:3:"all";}}}i:8;a:8:{s:9:"namespace";s:0:"";s:11:"short_class";s:16:"ReflectionMethod";s:5:"class";s:16:"ReflectionMethod";s:4:"type";s:2:"->";s:8:"function";s:10:"invokeArgs";s:4:"file";s:82:"/home/ubuntu/workspace/Association/vendor/jms/cg/src/CG/Proxy/MethodInvocation.php";s:4:"line";i:63;s:4:"args";a:2:{i:0;a:2:{i:0;s:6:"object";i:1;s:111:"EnhancedProxyef869ab2_aaa968b903122828095fdfdbf82a8a9887fe7bb9\__CG__\Ben\UserBundle\Controller\AdminController";}i:1;a:2:{i:0;s:5:"array";i:1;a:1:{i:0;a:2:{i:0;s:6:"string";i:1;s:3:"all";}}}}}i:9;a:8:{s:9:"namespace";s:8:"CG\Proxy";s:11:"short_class";s:16:"MethodInvocation";s:5:"class";s:25:"CG\Proxy\MethodInvocation";s:4:"type";s:2:"->";s:8:"function";s:7:"proceed";s:4:"file";s:157:"/home/ubuntu/workspace/Association/vendor/jms/security-extra-bundle/JMS/SecurityExtraBundle/Security/Authorization/Interception/MethodSecurityInterceptor.php";s:4:"line";i:120;s:4:"args";a:0:{}}i:10;a:8:{s:9:"namespace";s:59:"JMS\SecurityExtraBundle\Security\Authorization\Interception";s:11:"short_class";s:25:"MethodSecurityInterceptor";s:5:"class";s:85:"JMS\SecurityExtraBundle\Security\Authorization\Interception\MethodSecurityInterceptor";s:4:"type";s:2:"->";s:8:"function";s:9:"intercept";s:4:"file";s:82:"/home/ubuntu/workspace/Association/vendor/jms/cg/src/CG/Proxy/MethodInvocation.php";s:4:"line";i:58;s:4:"args";a:1:{i:0;a:2:{i:0;s:6:"object";i:1;s:25:"CG\Proxy\MethodInvocation";}}}i:11;a:8:{s:9:"namespace";s:8:"CG\Proxy";s:11:"short_class";s:16:"MethodInvocation";s:5:"class";s:25:"CG\Proxy\MethodInvocation";s:4:"type";s:2:"->";s:8:"function";s:7:"proceed";s:4:"file";s:114:"/home/ubuntu/workspace/Association/app/cache/dev/jms_diextra/proxies/Ben-UserBundle-Controller-AdminController.php";s:4:"line";i:129;s:4:"args";a:0:{}}i:12;a:8:{s:9:"namespace";s:95:"EnhancedProxyef869ab2_aaa968b903122828095fdfdbf82a8a9887fe7bb9\__CG__\Ben\UserBundle\Controller";s:11:"short_class";s:15:"AdminController";s:5:"class";s:111:"EnhancedProxyef869ab2_aaa968b903122828095fdfdbf82a8a9887fe7bb9\__CG__\Ben\UserBundle\Controller\AdminController";s:4:"type";s:2:"->";s:8:"function";s:17:"printTicketAction";s:4:"file";N;s:4:"line";N;s:4:"args";a:1:{i:0;a:2:{i:0;s:6:"string";i:1;s:3:"all";}}}i:13;a:8:{s:9:"namespace";s:0:"";s:11:"short_class";s:0:"";s:5:"class";s:0:"";s:4:"type";s:0:"";s:8:"function";s:20:"call_user_func_array";s:4:"file";s:58:"/home/ubuntu/workspace/Association/app/bootstrap.php.cache";s:4:"line";i:1428;s:4:"args";a:2:{i:0;a:2:{i:0;s:5:"array";i:1;a:2:{i:0;a:2:{i:0;s:6:"object";i:1;s:111:"EnhancedProxyef869ab2_aaa968b903122828095fdfdbf82a8a9887fe7bb9\__CG__\Ben\UserBundle\Controller\AdminController";}i:1;a:2:{i:0;s:6:"string";i:1;s:17:"printTicketAction";}}}i:1;a:2:{i:0;s:5:"array";i:1;a:1:{i:0;a:2:{i:0;s:6:"string";i:1;s:3:"all";}}}}}i:14;a:8:{s:9:"namespace";s:28:"Symfony\Component\HttpKernel";s:11:"short_class";s:10:"HttpKernel";s:5:"class";s:39:"Symfony\Component\HttpKernel\HttpKernel";s:4:"type";s:2:"->";s:8:"function";s:9:"handleRaw";s:4:"file";s:58:"/home/ubuntu/workspace/Association/app/bootstrap.php.cache";s:4:"line";i:1392;s:4:"args";a:2:{i:0;a:2:{i:0;s:6:"object";i:1;s:40:"Symfony\Component\HttpFoundation\Request";}i:1;a:2:{i:0;s:6:"string";i:1;s:1:"1";}}}i:15;a:8:{s:9:"namespace";s:28:"Symfony\Component\HttpKernel";s:11:"short_class";s:10:"HttpKernel";s:5:"class";s:39:"Symfony\Component\HttpKernel\HttpKernel";s:4:"type";s:2:"->";s:8:"function";s:6:"handle";s:4:"file";s:58:"/home/ubuntu/workspace/Association/app/bootstrap.php.cache";s:4:"line";i:1568;s:4:"args";a:3:{i:0;a:2:{i:0;s:6:"object";i:1;s:40:"Symfony\Component\HttpFoundation\Request";}i:1;a:2:{i:0;s:6:"string";i:1;s:1:"1";}i:2;a:2:{i:0;s:7:"boolean";i:1;b:1;}}}i:16;a:8:{s:9:"namespace";s:30:"Symfony\Bundle\FrameworkBundle";s:11:"short_class";s:10:"HttpKernel";s:5:"class";s:41:"Symfony\Bundle\FrameworkBundle\HttpKernel";s:4:"type";s:2:"->";s:8:"function";s:6:"handle";s:4:"file";s:58:"/home/ubuntu/workspace/Association/app/bootstrap.php.cache";s:4:"line";i:619;s:4:"args";a:3:{i:0;a:2:{i:0;s:6:"object";i:1;s:40:"Symfony\Component\HttpFoundation\Request";}i:1;a:2:{i:0;s:6:"string";i:1;s:1:"1";}i:2;a:2:{i:0;s:7:"boolean";i:1;b:1;}}}i:17;a:8:{s:9:"namespace";s:28:"Symfony\Component\HttpKernel";s:11:"short_class";s:6:"Kernel";s:5:"class";s:35:"Symfony\Component\HttpKernel\Kernel";s:4:"type";s:2:"->";s:8:"function";s:6:"handle";s:4:"file";s:50:"/home/ubuntu/workspace/Association/web/app_dev.php";s:4:"line";i:27;s:4:"args";a:1:{i:0;a:2:{i:0;s:6:"object";i:1;s:40:"Symfony\Component\HttpFoundation\Request";}}}}s:62:" Symfony\Component\HttpKernel\Exception\FlattenException class";s:16:"RuntimeException";s:67:" Symfony\Component\HttpKernel\Exception\FlattenException statusCode";i:500;s:64:" Symfony\Component\HttpKernel\Exception\FlattenException headers";a:0:{}s:61:" Symfony\Component\HttpKernel\Exception\FlattenException file";s:97:"/home/ubuntu/workspace/Association/vendor/knplabs/knp-snappy/src/Knp/Snappy/AbstractGenerator.php";s:61:" Symfony\Component\HttpKernel\Exception\FlattenException line";i:333;}}}s:6:"events";C:61:"Symfony\Component\HttpKernel\DataCollector\EventDataCollector":16055:{a:2:{s:16:"called_listeners";a:23:{s:91:"kernel.request.Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelRequest";a:8:{s:5:"event";s:14:"kernel.request";s:8:"priority";i:1024;s:4:"type";s:6:"Method";s:5:"class";s:59:"Symfony\Component\HttpKernel\EventListener\ProfilerListener";s:6:"method";s:15:"onKernelRequest";s:4:"file";s:125:"/home/ubuntu/workspace/Association/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/ProfilerListener.php";s:4:"line";i:72;s:6:"pretty";s:76:"Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelRequest";}s:92:"kernel.request.Symfony\Bundle\FrameworkBundle\EventListener\SessionListener::onKernelRequest";a:8:{s:5:"event";s:14:"kernel.request";s:8:"priority";i:128;s:4:"type";s:6:"Method";s:5:"class";s:60:"Symfony\Bundle\FrameworkBundle\EventListener\SessionListener";s:6:"method";s:15:"onKernelRequest";s:4:"file";s:60:"/home/ubuntu/workspace/Association/app/cache/dev/classes.php";s:4:"line";i:40;s:6:"pretty";s:77:"Symfony\Bundle\FrameworkBundle\EventListener\SessionListener::onKernelRequest";}s:89:"kernel.request.Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest";a:8:{s:5:"event";s:14:"kernel.request";s:8:"priority";i:32;s:4:"type";s:6:"Method";s:5:"class";s:57:"Symfony\Component\HttpKernel\EventListener\RouterListener";s:6:"method";s:15:"onKernelRequest";s:4:"file";s:60:"/home/ubuntu/workspace/Association/app/cache/dev/classes.php";s:4:"line";i:5166;s:6:"pretty";s:74:"Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest";}s:70:"kernel.request.Ben\UserBundle\Listener\LocaleListener::onKernelRequest";a:8:{s:5:"event";s:14:"kernel.request";s:8:"priority";i:17;s:4:"type";s:6:"Method";s:5:"class";s:38:"Ben\UserBundle\Listener\LocaleListener";s:6:"method";s:15:"onKernelRequest";s:4:"file";s:81:"/home/ubuntu/workspace/Association/src/Ben/UserBundle/Listener/LocaleListener.php";s:4:"line";i:17;s:6:"pretty";s:55:"Ben\UserBundle\Listener\LocaleListener::onKernelRequest";}s:89:"kernel.request.Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest";a:8:{s:5:"event";s:14:"kernel.request";s:8:"priority";i:16;s:4:"type";s:6:"Method";s:5:"class";s:57:"Symfony\Component\HttpKernel\EventListener\LocaleListener";s:6:"method";s:15:"onKernelRequest";s:4:"file";s:123:"/home/ubuntu/workspace/Association/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/LocaleListener.php";s:4:"line";i:48;s:6:"pretty";s:74:"Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest";}s:72:"kernel.request.Symfony\Component\Security\Http\Firewall::onKernelRequest";a:8:{s:5:"event";s:14:"kernel.request";s:8:"priority";i:8;s:4:"type";s:6:"Method";s:5:"class";s:40:"Symfony\Component\Security\Http\Firewall";s:6:"method";s:15:"onKernelRequest";s:4:"file";s:60:"/home/ubuntu/workspace/Association/app/cache/dev/classes.php";s:4:"line";i:5814;s:6:"pretty";s:57:"Symfony\Component\Security\Http\Firewall::onKernelRequest";}s:90:"kernel.request.Symfony\Bundle\AsseticBundle\EventListener\RequestListener::onKernelRequest";a:8:{s:5:"event";s:14:"kernel.request";s:8:"priority";i:0;s:4:"type";s:6:"Method";s:5:"class";s:58:"Symfony\Bundle\AsseticBundle\EventListener\RequestListener";s:6:"method";s:15:"onKernelRequest";s:4:"file";s:127:"/home/ubuntu/workspace/Association/vendor/symfony/assetic-bundle/Symfony/Bundle/AsseticBundle/EventListener/RequestListener.php";s:4:"line";i:23;s:6:"pretty";s:75:"Symfony\Bundle\AsseticBundle\EventListener\RequestListener::onKernelRequest";}s:76:"kernel.controller.Ben\UserBundle\Listener\ActivityListener::onCoreController";a:8:{s:5:"event";s:17:"kernel.controller";s:8:"priority";i:0;s:4:"type";s:6:"Method";s:5:"class";s:40:"Ben\UserBundle\Listener\ActivityListener";s:6:"method";s:16:"onCoreController";s:4:"file";s:83:"/home/ubuntu/workspace/Association/src/Ben/UserBundle/Listener/ActivityListener.php";s:4:"line";i:25;s:6:"pretty";s:58:"Ben\UserBundle\Listener\ActivityListener::onCoreController";}s:102:"kernel.controller.Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController";a:8:{s:5:"event";s:17:"kernel.controller";s:8:"priority";i:0;s:4:"type";s:6:"Method";s:5:"class";s:64:"Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector";s:6:"method";s:18:"onKernelController";s:4:"file";s:128:"/home/ubuntu/workspace/Association/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/DataCollector/RouterDataCollector.php";s:4:"line";i:65;s:6:"pretty";s:84:"Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController";}s:105:"kernel.controller.Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener::onKernelController";a:8:{s:5:"event";s:17:"kernel.controller";s:8:"priority";i:0;s:4:"type";s:6:"Method";s:5:"class";s:67:"Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener";s:6:"method";s:18:"onKernelController";s:4:"file";s:143:"/home/ubuntu/workspace/Association/vendor/sensio/framework-extra-bundle/Sensio/Bundle/FrameworkExtraBundle/EventListener/ControllerListener.php";s:4:"line";i:49;s:6:"pretty";s:87:"Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener::onKernelController";}s:109:"kernel.controller.Sensio\Bundle\FrameworkExtraBundle\EventListener\ParamConverterListener::onKernelController";a:8:{s:5:"event";s:17:"kernel.controller";s:8:"priority";i:0;s:4:"type";s:6:"Method";s:5:"class";s:71:"Sensio\Bundle\FrameworkExtraBundle\EventListener\ParamConverterListener";s:6:"method";s:18:"onKernelController";s:4:"file";s:147:"/home/ubuntu/workspace/Association/vendor/sensio/framework-extra-bundle/Sensio/Bundle/FrameworkExtraBundle/EventListener/ParamConverterListener.php";s:4:"line";i:46;s:6:"pretty";s:91:"Sensio\Bundle\FrameworkExtraBundle\EventListener\ParamConverterListener::onKernelController";}s:103:"kernel.controller.Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener::onKernelController";a:8:{s:5:"event";s:17:"kernel.controller";s:8:"priority";i:0;s:4:"type";s:6:"Method";s:5:"class";s:65:"Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener";s:6:"method";s:18:"onKernelController";s:4:"file";s:141:"/home/ubuntu/workspace/Association/vendor/sensio/framework-extra-bundle/Sensio/Bundle/FrameworkExtraBundle/EventListener/TemplateListener.php";s:4:"line";i:48;s:6:"pretty";s:85:"Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener::onKernelController";}s:101:"kernel.controller.Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController";a:8:{s:5:"event";s:17:"kernel.controller";s:8:"priority";i:0;s:4:"type";s:6:"Method";s:5:"class";s:63:"Symfony\Component\HttpKernel\DataCollector\RequestDataCollector";s:6:"method";s:18:"onKernelController";s:4:"file";s:129:"/home/ubuntu/workspace/Association/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/DataCollector/RequestDataCollector.php";s:4:"line";i:225;s:6:"pretty";s:83:"Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController";}s:94:"kernel.exception.Symfony\Component\Security\Http\Firewall\ExceptionListener::onKernelException";a:8:{s:5:"event";s:16:"kernel.exception";s:8:"priority";i:0;s:4:"type";s:6:"Method";s:5:"class";s:58:"Symfony\Component\Security\Http\Firewall\ExceptionListener";s:6:"method";s:17:"onKernelException";s:4:"file";s:124:"/home/ubuntu/workspace/Association/vendor/symfony/symfony/src/Symfony/Component/Security/Http/Firewall/ExceptionListener.php";s:4:"line";i:77;s:6:"pretty";s:77:"Symfony\Component\Security\Http\Firewall\ExceptionListener::onKernelException";}s:95:"kernel.exception.Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelException";a:8:{s:5:"event";s:16:"kernel.exception";s:8:"priority";i:0;s:4:"type";s:6:"Method";s:5:"class";s:59:"Symfony\Component\HttpKernel\EventListener\ProfilerListener";s:6:"method";s:17:"onKernelException";s:4:"file";s:125:"/home/ubuntu/workspace/Association/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/ProfilerListener.php";s:4:"line";i:63;s:6:"pretty";s:78:"Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelException";}s:96:"kernel.exception.Symfony\Component\HttpKernel\EventListener\ExceptionListener::onKernelException";a:8:{s:5:"event";s:16:"kernel.exception";s:8:"priority";i:-128;s:4:"type";s:6:"Method";s:5:"class";s:60:"Symfony\Component\HttpKernel\EventListener\ExceptionListener";s:6:"method";s:17:"onKernelException";s:4:"file";s:126:"/home/ubuntu/workspace/Association/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/ExceptionListener.php";s:4:"line";i:39;s:6:"pretty";s:79:"Symfony\Component\HttpKernel\EventListener\ExceptionListener::onKernelException";}s:90:"kernel.response.Symfony\Component\Security\Http\Firewall\ContextListener::onKernelResponse";a:8:{s:5:"event";s:15:"kernel.response";s:8:"priority";i:0;s:4:"type";s:6:"Method";s:5:"class";s:56:"Symfony\Component\Security\Http\Firewall\ContextListener";s:6:"method";s:16:"onKernelResponse";s:4:"file";s:122:"/home/ubuntu/workspace/Association/vendor/symfony/symfony/src/Symfony/Component/Security/Http/Firewall/ContextListener.php";s:4:"line";i:105;s:6:"pretty";s:74:"Symfony\Component\Security\Http\Firewall\ContextListener::onKernelResponse";}s:93:"kernel.response.Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse";a:8:{s:5:"event";s:15:"kernel.response";s:8:"priority";i:0;s:4:"type";s:6:"Method";s:5:"class";s:59:"Symfony\Component\Security\Http\RememberMe\ResponseListener";s:6:"method";s:16:"onKernelResponse";s:4:"file";s:125:"/home/ubuntu/workspace/Association/vendor/symfony/symfony/src/Symfony/Component/Security/Http/RememberMe/ResponseListener.php";s:4:"line";i:23;s:6:"pretty";s:77:"Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse";}s:79:"kernel.response.Symfony\Bridge\Monolog\Handler\FirePHPHandler::onKernelResponse";a:8:{s:5:"event";s:15:"kernel.response";s:8:"priority";i:0;s:4:"type";s:6:"Method";s:5:"class";s:45:"Symfony\Bridge\Monolog\Handler\FirePHPHandler";s:6:"method";s:16:"onKernelResponse";s:4:"file";s:111:"/home/ubuntu/workspace/Association/vendor/symfony/symfony/src/Symfony/Bridge/Monolog/Handler/FirePHPHandler.php";s:4:"line";i:39;s:6:"pretty";s:63:"Symfony\Bridge\Monolog\Handler\FirePHPHandler::onKernelResponse";}s:96:"kernel.response.Sensio\Bundle\FrameworkExtraBundle\EventListener\CacheListener::onKernelResponse";a:8:{s:5:"event";s:15:"kernel.response";s:8:"priority";i:0;s:4:"type";s:6:"Method";s:5:"class";s:62:"Sensio\Bundle\FrameworkExtraBundle\EventListener\CacheListener";s:6:"method";s:16:"onKernelResponse";s:4:"file";s:138:"/home/ubuntu/workspace/Association/vendor/sensio/framework-extra-bundle/Sensio/Bundle/FrameworkExtraBundle/EventListener/CacheListener.php";s:4:"line";i:30;s:6:"pretty";s:80:"Sensio\Bundle\FrameworkExtraBundle\EventListener\CacheListener::onKernelResponse";}s:93:"kernel.response.Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse";a:8:{s:5:"event";s:15:"kernel.response";s:8:"priority";i:0;s:4:"type";s:6:"Method";s:5:"class";s:59:"Symfony\Component\HttpKernel\EventListener\ResponseListener";s:6:"method";s:16:"onKernelResponse";s:4:"file";s:60:"/home/ubuntu/workspace/Association/app/cache/dev/classes.php";s:4:"line";i:5100;s:6:"pretty";s:77:"Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse";}s:91:"kernel.response.Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelResponse";a:8:{s:5:"event";s:15:"kernel.response";s:8:"priority";i:0;s:4:"type";s:6:"Method";s:5:"class";s:57:"Symfony\Component\HttpKernel\EventListener\LocaleListener";s:6:"method";s:16:"onKernelResponse";s:4:"file";s:123:"/home/ubuntu/workspace/Association/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/LocaleListener.php";s:4:"line";i:38;s:6:"pretty";s:75:"Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelResponse";}s:93:"kernel.response.Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse";a:8:{s:5:"event";s:15:"kernel.response";s:8:"priority";i:-100;s:4:"type";s:6:"Method";s:5:"class";s:59:"Symfony\Component\HttpKernel\EventListener\ProfilerListener";s:6:"method";s:16:"onKernelResponse";s:4:"file";s:125:"/home/ubuntu/workspace/Association/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/ProfilerListener.php";s:4:"line";i:82;s:6:"pretty";s:77:"Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse";}}s:20:"not_called_listeners";a:6:{s:104:"kernel.response.Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse";a:8:{s:5:"event";s:15:"kernel.response";s:8:"priority";i:-128;s:4:"type";s:6:"Method";s:5:"class";s:70:"Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener";s:6:"method";s:16:"onKernelResponse";s:4:"file";s:136:"/home/ubuntu/workspace/Association/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/EventListener/WebDebugToolbarListener.php";s:4:"line";i:55;s:6:"pretty";s:88:"Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse";}s:101:"kernel.response.Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse";a:8:{s:5:"event";s:15:"kernel.response";s:8:"priority";i:-1024;s:4:"type";s:6:"Method";s:5:"class";s:67:"Symfony\Component\HttpKernel\EventListener\StreamedResponseListener";s:6:"method";s:16:"onKernelResponse";s:4:"file";s:133:"/home/ubuntu/workspace/Association/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/StreamedResponseListener.php";s:4:"line";i:33;s:6:"pretty";s:85:"Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse";}s:95:"security.interactive_login.Ben\UserBundle\Listener\SecurityListener::onSecurityInteractiveLogin";a:8:{s:5:"event";s:26:"security.interactive_login";s:8:"priority";i:0;s:4:"type";s:6:"Method";s:5:"class";s:40:"Ben\UserBundle\Listener\SecurityListener";s:6:"method";s:26:"onSecurityInteractiveLogin";s:4:"file";s:83:"/home/ubuntu/workspace/Association/src/Ben/UserBundle/Listener/SecurityListener.php";s:4:"line";i:33;s:6:"pretty";s:68:"Ben\UserBundle\Listener\SecurityListener::onSecurityInteractiveLogin";}s:103:"security.interactive_login.FOS\UserBundle\Security\InteractiveLoginListener::onSecurityInteractiveLogin";a:8:{s:5:"event";s:26:"security.interactive_login";s:8:"priority";i:0;s:4:"type";s:6:"Method";s:5:"class";s:48:"FOS\UserBundle\Security\InteractiveLoginListener";s:6:"method";s:26:"onSecurityInteractiveLogin";s:4:"file";s:123:"/home/ubuntu/workspace/Association/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Security/InteractiveLoginListener.php";s:4:"line";i:27;s:6:"pretty";s:76:"FOS\UserBundle\Security\InteractiveLoginListener::onSecurityInteractiveLogin";}s:91:"kernel.view.Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener::onKernelView";a:8:{s:5:"event";s:11:"kernel.view";s:8:"priority";i:0;s:4:"type";s:6:"Method";s:5:"class";s:65:"Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener";s:6:"method";s:12:"onKernelView";s:4:"file";s:141:"/home/ubuntu/workspace/Association/vendor/sensio/framework-extra-bundle/Sensio/Bundle/FrameworkExtraBundle/EventListener/TemplateListener.php";s:4:"line";i:88;s:6:"pretty";s:79:"Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener::onKernelView";}s:102:"kernel.terminate.Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener::onKernelTerminate";a:8:{s:5:"event";s:16:"kernel.terminate";s:8:"priority";i:0;s:4:"type";s:6:"Method";s:5:"class";s:66:"Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener";s:6:"method";s:17:"onKernelTerminate";s:4:"file";s:139:"/home/ubuntu/workspace/Association/vendor/symfony/swiftmailer-bundle/Symfony/Bundle/SwiftmailerBundle/EventListener/EmailSenderListener.php";s:4:"line";i:36;s:6:"pretty";s:85:"Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener::onKernelTerminate";}}}}s:6:"logger";C:62:"Symfony\Component\HttpKernel\DataCollector\LoggerDataCollector":16703:{a:2:{s:11:"error_count";i:1;s:4:"logs";a:47:{i:0;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:123:"Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelRequest".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:1;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:124:"Notified event "kernel.request" to listener "Symfony\Bundle\FrameworkBundle\EventListener\SessionListener::onKernelRequest".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:2;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:121:"Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:3;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:168:"Matched route "ben_ticket_user" (parameters: "_controller": "Ben\UserBundle\Controller\AdminController::printTicketAction", "users": "all", "_route": "ben_ticket_user")";s:8:"priority";i:200;s:12:"priorityName";s:4:"INFO";s:7:"context";a:0:{}}i:4;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:102:"Notified event "kernel.request" to listener "Ben\UserBundle\Listener\LocaleListener::onKernelRequest".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:5;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:121:"Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:6;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:104:"Notified event "kernel.request" to listener "Symfony\Component\Security\Http\Firewall::onKernelRequest".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:7;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:37:"Read SecurityContext from the session";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:8;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:34:"Reloading user from user provider.";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:9;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:679:"SELECT t0.username AS username1, t0.username_canonical AS username_canonical2, t0.email AS email3, t0.email_canonical AS email_canonical4, t0.enabled AS enabled5, t0.salt AS salt6, t0.password AS password7, t0.last_login AS last_login8, t0.locked AS locked9, t0.expired AS expired10, t0.expires_at AS expires_at11, t0.confirmation_token AS confirmation_token12, t0.password_requested_at AS password_requested_at13, t0.roles AS roles14, t0.credentials_expired AS credentials_expired15, t0.credentials_expire_at AS credentials_expire_at16, t0.id AS id17, t0.created AS created18, t0.lastActivity AS lastActivity19, t0.profile_id AS profile_id20 FROM user t0 WHERE t0.id = ? LIMIT 1";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:1:{i:0;i:1;}}i:10;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:49:"Username "admin" was reloaded from user provider.";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:11;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:122:"Notified event "kernel.request" to listener "Symfony\Bundle\AsseticBundle\EventListener\RequestListener::onKernelRequest".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:12;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:108:"Notified event "kernel.controller" to listener "Ben\UserBundle\Listener\ActivityListener::onCoreController".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:13;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:134:"Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:14;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:137:"Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener::onKernelController".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:15;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:141:"Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ParamConverterListener::onKernelController".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:16;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:135:"Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener::onKernelController".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:17;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:133:"Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:18;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:86:"SELECT t0.id AS id1, t0.the_key AS the_key2, t0.the_value AS the_value3 FROM config t0";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:19;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:196:"SELECT t0.id AS id1, t0.table_name AS table_name2, t0.field_name AS field_name3, t0.required AS required4, t0.visible AS visible5, t0.position AS position6, t0.nicename AS nicename7 FROM fields t0";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:20;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:1810:"SELECT DISTINCT id16 FROM (SELECT u0_.username AS username0, u0_.username_canonical AS username_canonical1, u0_.email AS email2, u0_.email_canonical AS email_canonical3, u0_.enabled AS enabled4, u0_.salt AS salt5, u0_.password AS password6, u0_.last_login AS last_login7, u0_.locked AS locked8, u0_.expired AS expired9, u0_.expires_at AS expires_at10, u0_.confirmation_token AS confirmation_token11, u0_.password_requested_at AS password_requested_at12, u0_.roles AS roles13, u0_.credentials_expired AS credentials_expired14, u0_.credentials_expire_at AS credentials_expire_at15, u0_.id AS id16, u0_.created AS created17, u0_.lastActivity AS lastActivity18, p1_.id AS id19, p1_.family_name AS family_name20, p1_.first_name AS first_name21, p1_.barcode AS barcode22, p1_.cin AS cin23, p1_.birthday AS birthday24, p1_.gender AS gender25, p1_.address AS address26, p1_.post_code AS post_code27, p1_.city AS city28, p1_.contry AS contry29, p1_.job AS job30, p1_.tel AS tel31, p1_.gsm AS gsm32, p1_.diplome AS diplome33, p1_.expertise AS expertise34, p1_.description AS description35, p1_.website AS website36, p1_.facebook AS facebook37, p1_.google AS google38, p1_.twitter AS twitter39, p1_.frequence AS frequence40, p1_.method AS method41, p1_.montant AS montant42, p1_.archived AS archived43, p1_.cause AS cause44, i2_.id AS id45, i2_.path AS path46, m3_.id AS id47, m3_.name AS name48, m3_.kind AS kind49, a4_.id AS id50, a4_.date_from AS date_from51, a4_.date_to AS date_to52, a4_.city AS city53 FROM user u0_ LEFT JOIN profile p1_ ON u0_.profile_id = p1_.id LEFT JOIN image i2_ ON p1_.image_id = i2_.id LEFT JOIN user_group u5_ ON u0_.id = u5_.user_id LEFT JOIN mygroup m3_ ON m3_.id = u5_.group_id LEFT JOIN avancement a4_ ON u0_.id = a4_.user_id LEFT JOIN status s6_ ON a4_.status_id = s6_.id) dctrn_result";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:21;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:1933:"SELECT u0_.username AS username0, u0_.username_canonical AS username_canonical1, u0_.email AS email2, u0_.email_canonical AS email_canonical3, u0_.enabled AS enabled4, u0_.salt AS salt5, u0_.password AS password6, u0_.last_login AS last_login7, u0_.locked AS locked8, u0_.expired AS expired9, u0_.expires_at AS expires_at10, u0_.confirmation_token AS confirmation_token11, u0_.password_requested_at AS password_requested_at12, u0_.roles AS roles13, u0_.credentials_expired AS credentials_expired14, u0_.credentials_expire_at AS credentials_expire_at15, u0_.id AS id16, u0_.created AS created17, u0_.lastActivity AS lastActivity18, p1_.id AS id19, p1_.family_name AS family_name20, p1_.first_name AS first_name21, p1_.barcode AS barcode22, p1_.cin AS cin23, p1_.birthday AS birthday24, p1_.gender AS gender25, p1_.address AS address26, p1_.post_code AS post_code27, p1_.city AS city28, p1_.contry AS contry29, p1_.job AS job30, p1_.tel AS tel31, p1_.gsm AS gsm32, p1_.diplome AS diplome33, p1_.expertise AS expertise34, p1_.description AS description35, p1_.website AS website36, p1_.facebook AS facebook37, p1_.google AS google38, p1_.twitter AS twitter39, p1_.frequence AS frequence40, p1_.method AS method41, p1_.montant AS montant42, p1_.archived AS archived43, p1_.cause AS cause44, i2_.id AS id45, i2_.path AS path46, m3_.id AS id47, m3_.name AS name48, m3_.kind AS kind49, a4_.id AS id50, a4_.date_from AS date_from51, a4_.date_to AS date_to52, a4_.city AS city53, u0_.profile_id AS profile_id54, p1_.image_id AS image_id55, m3_.image_id AS image_id56, a4_.user_id AS user_id57, a4_.status_id AS status_id58 FROM user u0_ LEFT JOIN profile p1_ ON u0_.profile_id = p1_.id LEFT JOIN image i2_ ON p1_.image_id = i2_.id LEFT JOIN user_group u5_ ON u0_.id = u5_.user_id LEFT JOIN mygroup m3_ ON m3_.id = u5_.group_id LEFT JOIN avancement a4_ ON u0_.id = a4_.user_id LEFT JOIN status s6_ ON a4_.status_id = s6_.id WHERE u0_.id IN (?)";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:1:{i:0;a:20:{i:0;s:1:"1";i:1;s:1:"2";i:2;s:1:"8";i:3;s:2:"11";i:4;s:2:"12";i:5;s:2:"14";i:6;s:2:"15";i:7;s:2:"16";i:8;s:2:"19";i:9;s:2:"20";i:10;s:2:"21";i:11;s:2:"22";i:12;s:2:"23";i:13;s:2:"24";i:14;s:2:"25";i:15;s:2:"28";i:16;s:2:"29";i:17;s:2:"40";i:18;s:2:"41";i:19;s:2:"45";}}}i:22;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:120:"Output from HTML (<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-).";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:23;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:126:"Notified event "kernel.exception" to listener "Symfony\Component\Security\Http\Firewall\ExceptionListener::onKernelException".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:24;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:127:"Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelException".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:25;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:128:"Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\ExceptionListener::onKernelException".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:26;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:426:"RuntimeException: The exit status code '127' says something went wrong:
+stderr: "sh: 1: C:/wkhtmltopdf/bin/wkhtmltopdf.exe: not found
+"
+stdout: ""
+command: C:/wkhtmltopdf/bin/wkhtmltopdf.exe --lowquality '/tmp/knp_snappy56cbf844916048.68849949.html' '/tmp/knp_snappy56cbf844916d40.40128735.pdf'. (uncaught exception) at /home/ubuntu/workspace/Association/vendor/knplabs/knp-snappy/src/Knp/Snappy/AbstractGenerator.php line 333";s:8:"priority";i:500;s:12:"priorityName";s:8:"CRITICAL";s:7:"context";a:0:{}}i:27;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:123:"Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelRequest".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:28;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:124:"Notified event "kernel.request" to listener "Symfony\Bundle\FrameworkBundle\EventListener\SessionListener::onKernelRequest".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:29;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:121:"Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:30;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:102:"Notified event "kernel.request" to listener "Ben\UserBundle\Listener\LocaleListener::onKernelRequest".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:31;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:121:"Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:32;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:104:"Notified event "kernel.request" to listener "Symfony\Component\Security\Http\Firewall::onKernelRequest".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:33;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:122:"Notified event "kernel.request" to listener "Symfony\Bundle\AsseticBundle\EventListener\RequestListener::onKernelRequest".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:34;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:108:"Notified event "kernel.controller" to listener "Ben\UserBundle\Listener\ActivityListener::onCoreController".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:35;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:134:"Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:36;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:137:"Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener::onKernelController".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:37;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:141:"Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ParamConverterListener::onKernelController".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:38;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:135:"Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener::onKernelController".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:39;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:133:"Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:40;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:122:"Notified event "kernel.response" to listener "Symfony\Component\Security\Http\Firewall\ContextListener::onKernelResponse".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:41;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:125:"Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:42;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:111:"Notified event "kernel.response" to listener "Symfony\Bridge\Monolog\Handler\FirePHPHandler::onKernelResponse".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:43;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:128:"Notified event "kernel.response" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\CacheListener::onKernelResponse".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:44;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:125:"Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:45;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:123:"Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelResponse".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}i:46;a:5:{s:9:"timestamp";i:1456207940;s:7:"message";s:125:"Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse".";s:8:"priority";i:100;s:12:"priorityName";s:5:"DEBUG";s:7:"context";a:0:{}}}}}s:4:"time";C:60:"Symfony\Component\HttpKernel\DataCollector\TimeDataCollector":17233:{a:2:{s:10:"start_time";d:1456207939639.96;s:6:"events";a:36:{s:11:"__section__";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:2:{i:0;a:2:{i:0;d:0;i:1;d:1017.6;}i:1;a:2:{i:0;d:1033.7;i:1;d:1034.2;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:7:"default";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}s:14:"kernel.request";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:1:{i:0;a:2:{i:0;d:0;i:1;d:343.60000000000002;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:7:"section";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}s:22:"kernel.request.loading";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:2:{i:0;a:2:{i:0;d:0.10000000000000001;i:1;d:173.30000000000001;}i:1;a:2:{i:0;d:173.40000000000001;i:1;d:173.40000000000001;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:22:"event_listener_loading";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}s:16:"ProfilerListener";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:3:{i:0;a:2:{i:0;d:174;i:1;d:174;}i:1;a:2:{i:0;d:775.89999999999998;i:1;d:776;}i:2;a:2:{i:0;d:984.70000000000005;i:1;d:984.70000000000005;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:14:"event_listener";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}s:15:"SessionListener";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:1:{i:0;a:2:{i:0;d:174.30000000000001;i:1;d:194.69999999999999;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:14:"event_listener";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}s:14:"RouterListener";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:1:{i:0;a:2:{i:0;d:195.09999999999999;i:1;d:223.30000000000001;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:14:"event_listener";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}s:14:"LocaleListener";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:3:{i:0;a:2:{i:0;d:229.80000000000001;i:1;d:230.19999999999999;}i:1;a:2:{i:0;d:230.59999999999999;i:1;d:230.69999999999999;}i:2;a:2:{i:0;d:984.29999999999995;i:1;d:984.39999999999998;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:14:"event_listener";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}s:8:"Firewall";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:1:{i:0;a:2:{i:0;d:230.90000000000001;i:1;d:343.10000000000002;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:14:"event_listener";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}s:8:"doctrine";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:5:{i:0;a:2:{i:0;d:282.89999999999998;i:1;d:284.69999999999999;}i:1;a:2:{i:0;d:632.5;i:1;d:633.29999999999995;}i:2;a:2:{i:0;d:646.20000000000005;i:1;d:646.89999999999998;}i:3;a:2:{i:0;d:693.5;i:1;d:697.79999999999995;}i:4;a:2:{i:0;d:713.5;i:1;d:716;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:8:"doctrine";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}s:15:"RequestListener";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:1:{i:0;a:2:{i:0;d:343.5;i:1;d:343.60000000000002;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:14:"event_listener";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}s:17:"kernel.controller";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:1:{i:0;a:2:{i:0;d:357.19999999999999;i:1;d:379.89999999999998;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:7:"section";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}s:25:"kernel.controller.loading";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:2:{i:0;a:2:{i:0;d:357.30000000000001;i:1;d:372.69999999999999;}i:1;a:2:{i:0;d:372.69999999999999;i:1;d:372.80000000000001;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:22:"event_listener_loading";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}s:16:"ActivityListener";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:1:{i:0;a:2:{i:0;d:373.39999999999998;i:1;d:373.5;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:14:"event_listener";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}s:19:"RouterDataCollector";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:1:{i:0;a:2:{i:0;d:373.89999999999998;i:1;d:373.89999999999998;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:14:"event_listener";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}s:18:"ControllerListener";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:1:{i:0;a:2:{i:0;d:374.39999999999998;i:1;d:378.10000000000002;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:14:"event_listener";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}s:22:"ParamConverterListener";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:1:{i:0;a:2:{i:0;d:378.69999999999999;i:1;d:378.80000000000001;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:14:"event_listener";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}s:16:"TemplateListener";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:1:{i:0;a:2:{i:0;d:379.30000000000001;i:1;d:379.39999999999998;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:14:"event_listener";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}s:20:"RequestDataCollector";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:1:{i:0;a:2:{i:0;d:379.89999999999998;i:1;d:379.89999999999998;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:14:"event_listener";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}s:10:"controller";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:1:{i:0;a:2:{i:0;d:379.89999999999998;i:1;d:981.5;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:7:"section";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}s:55:"template.twig (BenUserBundle:admin:etiquette.html.twig)";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:1:{i:0;a:2:{i:0;d:521.5;i:1;d:758.89999999999998;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:8:"template";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}s:16:"kernel.exception";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:1:{i:0;a:2:{i:0;d:774.70000000000005;i:1;d:981.39999999999998;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:7:"section";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}s:24:"kernel.exception.loading";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:3:{i:0;a:2:{i:0;d:774.70000000000005;i:1;d:774.89999999999998;}i:1;a:2:{i:0;d:774.89999999999998;i:1;d:774.89999999999998;}i:2;a:2:{i:0;d:981.39999999999998;i:1;d:981.39999999999998;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:22:"event_listener_loading";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}s:17:"ExceptionListener";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:2:{i:0;a:2:{i:0;d:775.39999999999998;i:1;d:775.39999999999998;}i:1;a:2:{i:0;d:776.29999999999995;i:1;d:981.20000000000005;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:14:"event_listener";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}s:17:"__section__.child";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:1:{i:0;a:2:{i:0;d:778;i:1;d:981;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:7:"section";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}s:15:"kernel.response";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:1:{i:0;a:2:{i:0;d:981.5;i:1;d:1017.6;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:7:"section";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}s:23:"kernel.response.loading";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:2:{i:0;a:2:{i:0;d:981.5;i:1;d:981.60000000000002;}i:1;a:2:{i:0;d:981.60000000000002;i:1;d:981.60000000000002;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:22:"event_listener_loading";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}s:15:"ContextListener";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:1:{i:0;a:2:{i:0;d:982;i:1;d:982.29999999999995;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:14:"event_listener";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}s:16:"ResponseListener";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:2:{i:0;a:2:{i:0;d:982.70000000000005;i:1;d:982.70000000000005;}i:1;a:2:{i:0;d:983.79999999999995;i:1;d:984;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:14:"event_listener";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}s:14:"FirePHPHandler";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:1:{i:0;a:2:{i:0;d:983.10000000000002;i:1;d:983.20000000000005;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:14:"event_listener";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}s:13:"CacheListener";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:1:{i:0;a:2:{i:0;d:983.5;i:1;d:983.5;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:14:"event_listener";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}s:23:"WebDebugToolbarListener";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:1:{i:0;a:2:{i:0;d:985;i:1;d:1017;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:14:"event_listener";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}s:63:"template.twig (WebProfilerBundle:Profiler:toolbar_js.html.twig)";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:1:{i:0;a:2:{i:0;d:1001.4;i:1;d:1016.7;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:8:"template";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}s:24:"StreamedResponseListener";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:1:{i:0;a:2:{i:0;d:1017.5;i:1;d:1017.5;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:14:"event_listener";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}s:16:"kernel.terminate";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:1:{i:0;a:2:{i:0;d:1033.7;i:1;d:1034.2;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:7:"section";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}s:24:"kernel.terminate.loading";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:2:{i:0;a:2:{i:0;d:1033.7;i:1;d:1033.8;}i:1;a:2:{i:0;d:1033.8;i:1;d:1033.8;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:22:"event_listener_loading";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}s:19:"EmailSenderListener";O:49:"Symfony\Component\HttpKernel\Debug\StopwatchEvent":4:{s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent periods";a:1:{i:0;a:2:{i:0;d:1034.2;i:1;d:1034.2;}}s:57:" Symfony\Component\HttpKernel\Debug\StopwatchEvent origin";d:1456207939831.5;s:59:" Symfony\Component\HttpKernel\Debug\StopwatchEvent category";s:14:"event_listener";s:58:" Symfony\Component\HttpKernel\Debug\StopwatchEvent started";a:0:{}}}}}s:6:"memory";C:62:"Symfony\Component\HttpKernel\DataCollector\MemoryDataCollector":30:{a:1:{s:6:"memory";i:26214400;}}s:6:"router";C:64:"Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector":51:{a:3:{s:8:"redirect";b:0;s:3:"url";N;s:5:"route";N;}}s:8:"security";C:65:"Symfony\Bundle\SecurityBundle\DataCollector\SecurityDataCollector":132:{a:4:{s:7:"enabled";b:1;s:13:"authenticated";b:1;s:4:"user";s:5:"admin";s:5:"roles";a:2:{i:0;s:10:"ROLE_ADMIN";i:1;s:9:"ROLE_USER";}}}s:11:"swiftmailer";C:61:"Symfony\Bridge\Swiftmailer\DataCollector\MessageDataCollector":69:{a:3:{s:8:"messages";a:0:{}s:12:"messageCount";i:0;s:7:"isSpool";b:1;}}s:2:"db";C:59:"Symfony\Bridge\Doctrine\DataCollector\DoctrineDataCollector":5874:{a:3:{s:7:"queries";a:1:{s:7:"default";a:5:{i:1;a:5:{s:3:"sql";s:679:"SELECT t0.username AS username1, t0.username_canonical AS username_canonical2, t0.email AS email3, t0.email_canonical AS email_canonical4, t0.enabled AS enabled5, t0.salt AS salt6, t0.password AS password7, t0.last_login AS last_login8, t0.locked AS locked9, t0.expired AS expired10, t0.expires_at AS expires_at11, t0.confirmation_token AS confirmation_token12, t0.password_requested_at AS password_requested_at13, t0.roles AS roles14, t0.credentials_expired AS credentials_expired15, t0.credentials_expire_at AS credentials_expire_at16, t0.id AS id17, t0.created AS created18, t0.lastActivity AS lastActivity19, t0.profile_id AS profile_id20 FROM user t0 WHERE t0.id = ? LIMIT 1";s:6:"params";a:1:{i:0;i:1;}s:5:"types";a:1:{i:0;i:1;}s:11:"executionMS";d:0.0013260841369628906;s:11:"explainable";b:1;}i:2;a:5:{s:3:"sql";s:86:"SELECT t0.id AS id1, t0.the_key AS the_key2, t0.the_value AS the_value3 FROM config t0";s:6:"params";a:0:{}s:5:"types";a:0:{}s:11:"executionMS";d:0.00031900405883789062;s:11:"explainable";b:1;}i:3;a:5:{s:3:"sql";s:196:"SELECT t0.id AS id1, t0.table_name AS table_name2, t0.field_name AS field_name3, t0.required AS required4, t0.visible AS visible5, t0.position AS position6, t0.nicename AS nicename7 FROM fields t0";s:6:"params";a:0:{}s:5:"types";a:0:{}s:11:"executionMS";d:0.00029492378234863281;s:11:"explainable";b:1;}i:4;a:5:{s:3:"sql";s:1810:"SELECT DISTINCT id16 FROM (SELECT u0_.username AS username0, u0_.username_canonical AS username_canonical1, u0_.email AS email2, u0_.email_canonical AS email_canonical3, u0_.enabled AS enabled4, u0_.salt AS salt5, u0_.password AS password6, u0_.last_login AS last_login7, u0_.locked AS locked8, u0_.expired AS expired9, u0_.expires_at AS expires_at10, u0_.confirmation_token AS confirmation_token11, u0_.password_requested_at AS password_requested_at12, u0_.roles AS roles13, u0_.credentials_expired AS credentials_expired14, u0_.credentials_expire_at AS credentials_expire_at15, u0_.id AS id16, u0_.created AS created17, u0_.lastActivity AS lastActivity18, p1_.id AS id19, p1_.family_name AS family_name20, p1_.first_name AS first_name21, p1_.barcode AS barcode22, p1_.cin AS cin23, p1_.birthday AS birthday24, p1_.gender AS gender25, p1_.address AS address26, p1_.post_code AS post_code27, p1_.city AS city28, p1_.contry AS contry29, p1_.job AS job30, p1_.tel AS tel31, p1_.gsm AS gsm32, p1_.diplome AS diplome33, p1_.expertise AS expertise34, p1_.description AS description35, p1_.website AS website36, p1_.facebook AS facebook37, p1_.google AS google38, p1_.twitter AS twitter39, p1_.frequence AS frequence40, p1_.method AS method41, p1_.montant AS montant42, p1_.archived AS archived43, p1_.cause AS cause44, i2_.id AS id45, i2_.path AS path46, m3_.id AS id47, m3_.name AS name48, m3_.kind AS kind49, a4_.id AS id50, a4_.date_from AS date_from51, a4_.date_to AS date_to52, a4_.city AS city53 FROM user u0_ LEFT JOIN profile p1_ ON u0_.profile_id = p1_.id LEFT JOIN image i2_ ON p1_.image_id = i2_.id LEFT JOIN user_group u5_ ON u0_.id = u5_.user_id LEFT JOIN mygroup m3_ ON m3_.id = u5_.group_id LEFT JOIN avancement a4_ ON u0_.id = a4_.user_id LEFT JOIN status s6_ ON a4_.status_id = s6_.id) dctrn_result";s:6:"params";a:0:{}s:5:"types";a:0:{}s:11:"executionMS";d:0.0037789344787597656;s:11:"explainable";b:1;}i:5;a:5:{s:3:"sql";s:1933:"SELECT u0_.username AS username0, u0_.username_canonical AS username_canonical1, u0_.email AS email2, u0_.email_canonical AS email_canonical3, u0_.enabled AS enabled4, u0_.salt AS salt5, u0_.password AS password6, u0_.last_login AS last_login7, u0_.locked AS locked8, u0_.expired AS expired9, u0_.expires_at AS expires_at10, u0_.confirmation_token AS confirmation_token11, u0_.password_requested_at AS password_requested_at12, u0_.roles AS roles13, u0_.credentials_expired AS credentials_expired14, u0_.credentials_expire_at AS credentials_expire_at15, u0_.id AS id16, u0_.created AS created17, u0_.lastActivity AS lastActivity18, p1_.id AS id19, p1_.family_name AS family_name20, p1_.first_name AS first_name21, p1_.barcode AS barcode22, p1_.cin AS cin23, p1_.birthday AS birthday24, p1_.gender AS gender25, p1_.address AS address26, p1_.post_code AS post_code27, p1_.city AS city28, p1_.contry AS contry29, p1_.job AS job30, p1_.tel AS tel31, p1_.gsm AS gsm32, p1_.diplome AS diplome33, p1_.expertise AS expertise34, p1_.description AS description35, p1_.website AS website36, p1_.facebook AS facebook37, p1_.google AS google38, p1_.twitter AS twitter39, p1_.frequence AS frequence40, p1_.method AS method41, p1_.montant AS montant42, p1_.archived AS archived43, p1_.cause AS cause44, i2_.id AS id45, i2_.path AS path46, m3_.id AS id47, m3_.name AS name48, m3_.kind AS kind49, a4_.id AS id50, a4_.date_from AS date_from51, a4_.date_to AS date_to52, a4_.city AS city53, u0_.profile_id AS profile_id54, p1_.image_id AS image_id55, m3_.image_id AS image_id56, a4_.user_id AS user_id57, a4_.status_id AS status_id58 FROM user u0_ LEFT JOIN profile p1_ ON u0_.profile_id = p1_.id LEFT JOIN image i2_ ON p1_.image_id = i2_.id LEFT JOIN user_group u5_ ON u0_.id = u5_.user_id LEFT JOIN mygroup m3_ ON m3_.id = u5_.group_id LEFT JOIN avancement a4_ ON u0_.id = a4_.user_id LEFT JOIN status s6_ ON a4_.status_id = s6_.id WHERE u0_.id IN (?)";s:6:"params";a:1:{i:0;a:20:{i:0;s:1:"1";i:1;s:1:"2";i:2;s:1:"8";i:3;s:2:"11";i:4;s:2:"12";i:5;s:2:"14";i:6;s:2:"15";i:7;s:2:"16";i:8;s:2:"19";i:9;s:2:"20";i:10;s:2:"21";i:11;s:2:"22";i:12;s:2:"23";i:13;s:2:"24";i:14;s:2:"25";i:15;s:2:"28";i:16;s:2:"29";i:17;s:2:"40";i:18;s:2:"41";i:19;s:2:"45";}}s:5:"types";a:1:{i:0;i:102;}s:11:"executionMS";d:0.0018939971923828125;s:11:"explainable";b:1;}}}s:11:"connections";a:1:{s:7:"default";s:32:"doctrine.dbal.default_connection";}s:8:"managers";a:1:{s:7:"default";s:35:"doctrine.orm.default_entity_manager";}}}}s:2:"ip";s:12:"10.240.0.147";s:6:"method";s:3:"GET";s:3:"url";s:78:"http://mws-rodolvelasco.c9users.io/Association/web/app_dev.php/printTicket/all";s:4:"time";i:1456207940;}

@@ -1,0 +1,9 @@
+
+<form action="{{ path('fos_user_group_new') }}" {{ form_enctype(form) }} method="POST" class="col-md-4 well special-form">
+<h3> Ajout d'un groupe</h3>
+	{{ form_row(form.name, {'label' : 'Nom du Groupe'}) }}
+
+    {{ form_rest(form)}}
+
+    <button type="submit" name="subvalider" class="btn btn-primary btn-embossed"><span class="fui-plus"></span> Ajouter</button>
+</form>

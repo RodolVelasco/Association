@@ -1,0 +1,68 @@
+{% extends "BenAssociationBundle::layout.html.twig" %}
+{% block title %}
+{{ 'cotisation.meta.number'|trans({'%id%': entity.id} ) }} | {{ parent() }}
+{% endblock %}
+{% block body %}
+
+<h2><span class="fui-tag"></span> {{ 'cotisation.meta.number'|trans({'%id%': entity.id} ) }} </h2>
+
+<div class="row">
+    <div class="col-xs-9">
+<table class="table table-bordered table-striped">
+    <tbody>
+        <tr>
+            <th>{{ 'user.meta.name'|trans }}</th>
+            <td><a href="{{ path('ben_show_user', {'id': entity.user.id }) }}">{{ entity.user.profile.fullName }}</a></td>
+        </tr>
+        <tr>
+            <th>{{ 'user.form.profile.cin'|trans }}</th>
+            <td>{{ entity.user.profile.cin }}</td>
+        </tr>
+        <tr>
+            <th>{{ 'cotisation.form.price'|trans }}</th>
+            <td>{{ entity.price }}</td>
+        </tr>
+        <tr>
+            <th>{{ 'cotisation.form.type'|trans }}</th>
+            <td>{{ entity.type }}</td>
+        </tr>
+        <tr>
+            <th>{{ 'cotisation.form.date.created'|trans }}</th>
+            <td>{{ entity.created|date('d/m/Y') }}</td>
+        </tr>
+        <tr>
+            <th>{{ 'cotisation.form.date.from'|trans }}</th>
+            <td>{{ entity.datefrom|date('d/m/Y') }}</td>
+        </tr>
+        <tr>
+            <th>{{ 'cotisation.form.date.to'|trans }}</th>
+            <td>{{ entity.dateto|date('d/m/Y') }}</td>
+        </tr>
+        <tr>
+            <th>{{ 'cotisation.form.description'|trans }}</th>
+            <td>{{ entity.description }}</td>
+        </tr>
+    </tbody>
+</table>
+  <div class="pull-right visible-print">
+      Fait à {{ app_config.org_city }} le {{ 'now'|date('d/m/Y')}}
+  </div>
+</div> 
+<div class="col-xs-3">
+    <form action="{{ path('cotisation_delete', { 'id': entity.id }) }}" method="post">
+    {{ form_widget(delete_form) }}
+    <a id="submitEditForm" class="btn btn-embossed btn-primary btn-block" href="{{ path('cotisation_edit', { 'id': entity.id }) }}">
+        <span class="fui-new"></span> {{ 'ben.action.edit'|trans }}
+    </a>
+    <a id="btnPrint" href="#" class="btn btn-embossed btn-inverse btn-block"><span class="glyphicon glyphicon-print"></span> {{ 'ben.action.print'|trans }}</a>
+    <a class="btn btn-embossed btn-inverse btn-block " href="{{ path('cotisation') }}">
+        <span class="fui-arrow-left"></span> {{ 'ben.action.backtolist'|trans }}
+    </a>
+    {% if is_granted("ROLE_ADMIN") %}<button type="submit" class="btn btn-embossed btn-danger btn-block"><span class="fui-cross"></span> {{ 'ben.action.delete'|trans }} </button>{% endif %}
+    
+    </form>
+</div>
+<div class="clearfix"></div>
+</div>
+{% endblock body %}
+
